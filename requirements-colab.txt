@@ -1,8 +1,8 @@
-accelerate>=1.2.1
-bitsandbytes>=0.45.0
+accelerate>=1.10.0
+bitsandbytes>=0.48.0
 datasets>=3.2.0
 pandas==2.2.2
-peft>=0.18.1
+peft>=0.19.1
 pyarrow>=18.1.0
 pyyaml>=6.0.2
 sentencepiece>=0.2.0

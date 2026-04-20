@@ -28,13 +28,13 @@ from qafinetune.runtime import detect_runtime, ensure_dir, load_json, save_json,
 
 
 DEFAULT_TARGET_MODULES = [
-    "q_proj",
-    "k_proj",
-    "v_proj",
-    "o_proj",
-    "gate_proj",
-    "up_proj",
-    "down_proj",
+    "q_proj.linear",
+    "k_proj.linear",
+    "v_proj.linear",
+    "o_proj.linear",
+    "gate_proj.linear",
+    "up_proj.linear",
+    "down_proj.linear",
 ]
 
 
