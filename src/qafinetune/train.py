@@ -496,7 +496,6 @@ def main() -> None:
             model=model,
             args=training_arguments,
             train_dataset=tokenized_dataset,
-            tokenizer=text_backend,
             data_collator=data_collator,
             callbacks=[RunStateCallback(run_paths.run_state_path, run_paths.trainer_metrics_path, pass_dir)],
         )
