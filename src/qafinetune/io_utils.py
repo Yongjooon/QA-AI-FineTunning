@@ -265,24 +265,36 @@ def load_training_records_from_zip(zip_path: str | Path, extract_dir: str | Path
     return records, profile
 
 
-def build_generation_prompt_from_zip(zip_path: str | Path, extract_dir: str | Path, max_chars_per_file: int = 12000) -> tuple[str, dict[str, Any]]:
-    extracted = unzip_to_dir(zip_path, extract_dir)
-    return build_generation_prompt_from_dir(extracted, max_chars_per_file=max_chars_per_file, source_zip_path=zip_path)
-
-
-def build_generation_prompt_from_dir(
-    source_dir: str | Path,
-    max_chars_per_file: int = 12000,
-    source_zip_path: str | Path | None = None,
+def build_generation_prompt_from_zip(
+    zip_path: str | Path,
+    extract_dir: str | Path,
+    max_chars_per_file: int = 4000,
+    max_files: int = 12,
 ) -> tuple[str, dict[str, Any]]:
-    extracted = Path(source_dir)
+    extracted = unzip_to_dir(zip_path, extract_dir)
+    return build_generation_prompt_from_dir(
+        extracted,
+        max_chars_per_file=max_chars_per_file,
+        max_files=max_files,
+        source_zip_path=zip_path,
+    )
+
+
+def build_generation_prompt_from_files(
+    base_dir: str | Path,
+    file_paths: list[Path],
+    max_chars_per_file: int = 4000,
+) -> tuple[str, dict[str, Any]]:
+    base_dir = Path(base_dir)
     sections: list[str] = []
     files_summary: list[dict[str, Any]] = []
 
-    for file_path in list_data_files(extracted):
+    for file_path in file_paths:
         content = render_file_for_generation_prompt(file_path)
+        if not content.strip():
+            continue
         clipped = content[:max_chars_per_file]
-        rel_path = str(file_path.relative_to(extracted))
+        rel_path = str(file_path.relative_to(base_dir))
         sections.append(f"## File: {rel_path}\n{clipped}")
         files_summary.append(
             {
@@ -293,7 +305,7 @@ def build_generation_prompt_from_dir(
         )
 
     if not sections:
-        raise RuntimeError("No supported input files were found in the provided zip file.")
+        raise RuntimeError("No supported input files were found in the provided source.")
 
     bundled_input = "\n\n".join(sections)
     prompt = (
@@ -311,15 +323,132 @@ def build_generation_prompt_from_dir(
         "Input bundle:\n\n"
         f"{bundled_input}"
     )
-
     profile = {
-        "source_dir": str(extracted.resolve()),
+        "source_dir": str(base_dir.resolve()),
+        "selected_file_count": len(files_summary),
+        "selected_files": [item["file"] for item in files_summary],
         "files": files_summary,
     }
+    return prompt, profile
+
+
+def select_generation_files(root_dir: str | Path, max_files: int = 12) -> list[Path]:
+    root = Path(root_dir)
+    candidates = [path for path in list_data_files(root) if path.suffix.lower() in {".json", ".jsonl", ".csv", ".parquet"}]
+
+    prioritized_names = [
+        "final-report.json",
+        "graph-snapshot.json",
+        "crawl-graph.json",
+        "frame-summary.json",
+        "render-readiness.json",
+        "static.json",
+        "initial-stabilization.json",
+        "trigger-candidates.json",
+        "next-queue.json",
+    ]
+    excluded_tokens = [
+        "annotation-legend",
+        "auto-dynamic-regions",
+        "diff-debug",
+        "trigger-results",
+    ]
+
+    selected: list[Path] = []
+    seen: set[Path] = set()
+
+    for name in prioritized_names:
+        for path in candidates:
+            if path.name.lower() != name or path in seen:
+                continue
+            selected.append(path)
+            seen.add(path)
+            if len(selected) >= max_files:
+                return selected
+
+    for path in candidates:
+        rel_path = str(path.relative_to(root)).replace("\\", "/").lower()
+        if path in seen:
+            continue
+        if any(token in rel_path for token in excluded_tokens):
+            continue
+        selected.append(path)
+        seen.add(path)
+        if len(selected) >= max_files:
+            break
+
+    return selected
+
+
+def build_generation_prompt_from_dir(
+    source_dir: str | Path,
+    max_chars_per_file: int = 4000,
+    max_files: int = 12,
+    source_zip_path: str | Path | None = None,
+) -> tuple[str, dict[str, Any]]:
+    extracted = Path(source_dir)
+    selected_files = select_generation_files(extracted, max_files=max_files)
+    prompt, profile = build_generation_prompt_from_files(
+        extracted,
+        selected_files,
+        max_chars_per_file=max_chars_per_file,
+    )
     if source_zip_path is not None:
         profile["zip_path"] = str(Path(source_zip_path).resolve())
         profile["extract_dir"] = str(extracted.resolve())
     return prompt, profile
+
+
+def build_generation_jobs_from_dir(
+    source_dir: str | Path,
+    max_chars_per_file: int = 4000,
+    max_files: int = 12,
+) -> list[dict[str, Any]]:
+    source_dir = Path(source_dir)
+    pages_root = source_dir / "pages"
+    page_dirs = sorted(path for path in pages_root.iterdir() if path.is_dir()) if pages_root.exists() else []
+
+    if not page_dirs:
+        prompt, profile = build_generation_prompt_from_dir(
+            source_dir,
+            max_chars_per_file=max_chars_per_file,
+            max_files=max_files,
+        )
+        return [
+            {
+                "job_name": "full_input",
+                "prompt": prompt,
+                "profile": profile,
+            }
+        ]
+
+    shared_files: list[Path] = []
+    for name in ["final-report.json", "graph-snapshot.json", "crawl-graph.json"]:
+        candidate = source_dir / name
+        if candidate.exists():
+            shared_files.append(candidate)
+
+    jobs: list[dict[str, Any]] = []
+    per_page_file_budget = max(4, max_files - len(shared_files))
+
+    for page_dir in page_dirs:
+        page_files = select_generation_files(page_dir, max_files=per_page_file_budget)
+        prompt, profile = build_generation_prompt_from_files(
+            source_dir,
+            shared_files + page_files,
+            max_chars_per_file=max_chars_per_file,
+        )
+        profile["page_dir"] = str(page_dir.resolve())
+        profile["mode"] = "page_split"
+        jobs.append(
+            {
+                "job_name": page_dir.name,
+                "prompt": prompt,
+                "profile": profile,
+            }
+        )
+
+    return jobs
 
 
 def render_file_for_generation_prompt(path: str | Path) -> str:
