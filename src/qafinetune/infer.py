@@ -50,16 +50,24 @@ def load_processor(adapter_path: str, model_name: str):
     except Exception:
         processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
 
-    tokenizer = processor.tokenizer
-    tokenizer.padding_side = "left"
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
     return processor
+
+
+def resolve_text_backend(processor):
+    text_backend = getattr(processor, "tokenizer", None) or processor
+    if hasattr(text_backend, "padding_side"):
+        text_backend.padding_side = "left"
+    pad_token = getattr(text_backend, "pad_token", None)
+    eos_token = getattr(text_backend, "eos_token", None)
+    if pad_token is None and eos_token is not None:
+        text_backend.pad_token = eos_token
+    return text_backend
 
 
 def load_base_and_adapter(model_name: str, adapter_path: str, bf16: bool):
     compute_dtype = torch.bfloat16 if bf16 else torch.float16
     processor = load_processor(adapter_path, model_name)
+    text_backend = resolve_text_backend(processor)
 
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,
@@ -78,7 +86,7 @@ def load_base_and_adapter(model_name: str, adapter_path: str, bf16: bool):
     )
     model = PeftModel.from_pretrained(base_model, adapter_path)
     model.eval()
-    return model, processor
+    return model, processor, text_backend
 
 
 def build_messages(prompt: str) -> list[dict[str, Any]]:
@@ -116,12 +124,11 @@ def main() -> None:
     prompt, input_profile = build_generation_prompt_from_zip(args.input_zip, output_paths["extract_dir"])
     save_json(output_paths["input_profile_path"], input_profile)
 
-    model, processor = load_base_and_adapter(
+    model, processor, text_backend = load_base_and_adapter(
         model_name=args.model_name,
         adapter_path=args.adapter_path,
         bf16=runtime_profile["bf16_supported"],
     )
-    tokenizer = processor.tokenizer
 
     messages = build_messages(prompt)
     try:
@@ -138,7 +145,7 @@ def main() -> None:
             "Generate a QA scenario summary and strict Playwright JSON.\n\n"
             f"User:\n{prompt}\n\nAssistant:\n"
         )
-        inputs = tokenizer(fallback_prompt, return_tensors="pt")
+        inputs = text_backend(fallback_prompt, return_tensors="pt")
 
     model_device = next(model.parameters()).device
     inputs = {
@@ -154,11 +161,11 @@ def main() -> None:
             temperature=args.temperature,
             top_p=args.top_p,
             do_sample=True,
-            pad_token_id=tokenizer.eos_token_id,
+            pad_token_id=text_backend.eos_token_id,
         )
 
     prompt_length = inputs["input_ids"].shape[-1]
-    generated_text = tokenizer.decode(generated[0][prompt_length:], skip_special_tokens=True)
+    generated_text = processor.decode(generated[0][prompt_length:], skip_special_tokens=True)
     output_paths["raw_output_path"].write_text(generated_text, encoding="utf-8")
 
     scenario_description, json_text = extract_tagged_sections(generated_text)

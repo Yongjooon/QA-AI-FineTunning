@@ -169,12 +169,22 @@ def format_messages_for_training(processor, example: dict[str, Any]) -> str:
         return f"User:\n{prompt}\n\nAssistant:\n{response}"
 
 
-def tokenize_records(dataset: Dataset, processor, max_seq_length: int) -> Dataset:
-    tokenizer = processor.tokenizer
+def resolve_text_backend(processor):
+    text_backend = getattr(processor, "tokenizer", None) or processor
+    if hasattr(text_backend, "padding_side"):
+        text_backend.padding_side = "right"
+    pad_token = getattr(text_backend, "pad_token", None)
+    eos_token = getattr(text_backend, "eos_token", None)
+    if pad_token is None and eos_token is not None:
+        text_backend.pad_token = eos_token
+    return text_backend
+
+
+def tokenize_records(dataset: Dataset, processor, text_backend, max_seq_length: int) -> Dataset:
 
     def _tokenize(example: dict[str, Any]) -> dict[str, Any]:
         text = format_messages_for_training(processor, example)
-        tokens = tokenizer(
+        tokens = text_backend(
             text,
             truncation=True,
             max_length=max_seq_length,
@@ -189,10 +199,7 @@ def tokenize_records(dataset: Dataset, processor, max_seq_length: int) -> Datase
 def load_model_and_processor(model_name: str, bf16: bool):
     compute_dtype = torch.bfloat16 if bf16 else torch.float16
     processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
-    tokenizer = processor.tokenizer
-    tokenizer.padding_side = "right"
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
+    text_backend = resolve_text_backend(processor)
 
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,
@@ -211,7 +218,7 @@ def load_model_and_processor(model_name: str, bf16: bool):
     model.config.use_cache = False
     model.gradient_checkpointing_enable()
     model = prepare_model_for_kbit_training(model)
-    return model, processor
+    return model, processor, text_backend
 
 
 def resolve_resume_checkpoint(args: argparse.Namespace, run_paths: RunPaths) -> str | None:
@@ -267,13 +274,12 @@ def main() -> None:
     save_json(run_paths.dataset_profile_path, dataset_profile)
 
     if not records:
-        raise RuntimeError("No valid training records were found in the provided zip file.")
+        raise RuntimeError("No valid training records were found in the provided training source.")
 
     logger.info("Loaded %s valid training records", len(records))
 
     dataset = Dataset.from_list(records)
-    model, processor = load_model_and_processor(args.model_name, preset["bf16"])
-    tokenizer = processor.tokenizer
+    model, processor, text_backend = load_model_and_processor(args.model_name, preset["bf16"])
 
     lora_config = LoraConfig(
         r=args.lora_rank,
@@ -286,8 +292,8 @@ def main() -> None:
     model = get_peft_model(model, lora_config)
     model.print_trainable_parameters()
 
-    tokenized_dataset = tokenize_records(dataset, processor, args.max_seq_length)
-    data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
+    tokenized_dataset = tokenize_records(dataset, processor, text_backend, args.max_seq_length)
+    data_collator = DataCollatorForLanguageModeling(tokenizer=text_backend, mlm=False)
 
     training_arguments = TrainingArguments(
         output_dir=str(run_paths.checkpoints_dir),
@@ -340,7 +346,7 @@ def main() -> None:
         model=model,
         args=training_arguments,
         train_dataset=tokenized_dataset,
-        tokenizer=tokenizer,
+        tokenizer=text_backend,
         data_collator=data_collator,
         callbacks=[RunStateCallback(run_paths.run_state_path, run_paths.trainer_metrics_path, run_paths.checkpoints_dir)],
     )
