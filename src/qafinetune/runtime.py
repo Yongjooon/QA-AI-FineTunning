@@ -91,6 +91,7 @@ def suggest_training_preset(runtime_profile: dict[str, Any]) -> dict[str, Any]:
 
     memory_gb = runtime_profile["gpu_memory_gb"]
     bf16 = runtime_profile["bf16_supported"]
+    gpu_name = (runtime_profile.get("gpu_name") or "").lower()
 
     if memory_gb >= 39:
         return {
@@ -112,7 +113,7 @@ def suggest_training_preset(runtime_profile: dict[str, Any]) -> dict[str, Any]:
             "bf16": bf16,
             "fp16": not bf16,
         }
-    if memory_gb >= 15:
+    if memory_gb >= 14 or "t4" in gpu_name:
         return {
             "per_device_train_batch_size": 1,
             "gradient_accumulation_steps": 64,
