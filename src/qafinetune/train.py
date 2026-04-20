@@ -5,13 +5,14 @@ import json
 import math
 import os
 import random
+import gc
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
 import torch
 from datasets import Dataset
-from peft import LoraConfig, PeftModel, get_peft_model, prepare_model_for_kbit_training
+from peft import LoraConfig, PeftModel, get_peft_model
 from transformers import (
     AutoModelForCausalLM,
     AutoProcessor,
@@ -117,8 +118,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max_train_samples", type=int, default=0)
     parser.add_argument("--chunk_size", type=int, default=8)
     parser.add_argument("--replay_ratio", type=float, default=0.5)
-    parser.add_argument("--gpu_max_memory_gb", type=int, default=7)
-    parser.add_argument("--cpu_max_memory_gb", type=int, default=48)
+    parser.add_argument("--gpu_max_memory_gb", type=int, default=5)
+    parser.add_argument("--cpu_max_memory_gb", type=int, default=64)
     parser.add_argument("--seed", type=int, default=42)
     return parser.parse_args()
 
@@ -190,6 +191,32 @@ def tokenize_records(dataset: Dataset, processor, text_backend, max_seq_length: 
     return dataset.map(_tokenize, remove_columns=dataset.column_names)
 
 
+def prepare_model_for_low_vram_lora(model):
+    for param in model.parameters():
+        param.requires_grad = False
+
+    if hasattr(model, "enable_input_require_grads"):
+        model.enable_input_require_grads()
+    else:
+        input_embeddings = model.get_input_embeddings()
+
+        def _make_inputs_require_grad(module, module_input, module_output):
+            module_output.requires_grad_(True)
+
+        input_embeddings.register_forward_hook(_make_inputs_require_grad)
+
+    for module_name, module in model.named_modules():
+        if "norm" in module_name.lower():
+            try:
+                module.to(torch.float32)
+            except Exception:
+                pass
+
+    model.config.use_cache = False
+    model.gradient_checkpointing_enable()
+    return model
+
+
 def load_model_and_processor(
     model_name: str,
     bf16: bool,
@@ -221,11 +248,13 @@ def load_model_and_processor(
         load_kwargs["max_memory"] = {0: f"{gpu_max_memory_gb}GiB", "cpu": f"{cpu_max_memory_gb}GiB"}
         load_kwargs["low_cpu_mem_usage"] = True
         load_kwargs["offload_folder"] = str(offload_dir)
+        load_kwargs["offload_state_dict"] = True
 
     model = AutoModelForCausalLM.from_pretrained(model_name, **load_kwargs)
-    model.config.use_cache = False
-    model.gradient_checkpointing_enable()
-    model = prepare_model_for_kbit_training(model)
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+    gc.collect()
+    model = prepare_model_for_low_vram_lora(model)
     return model, processor, text_backend
 
 

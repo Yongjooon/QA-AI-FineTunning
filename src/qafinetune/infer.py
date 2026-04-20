@@ -91,10 +91,10 @@ def load_base_and_adapter(
     }
     if runtime_profile.get("gpu_memory_gb", 0) <= 16:
         ensure_dir(offload_dir)
-        gpu_budget_gb = max(10, int(runtime_profile["gpu_memory_gb"]) - 3)
-        load_kwargs["max_memory"] = {0: f"{gpu_budget_gb}GiB", "cpu": "48GiB"}
+        load_kwargs["max_memory"] = {0: "5GiB", "cpu": "64GiB"}
         load_kwargs["low_cpu_mem_usage"] = True
         load_kwargs["offload_folder"] = str(offload_dir)
+        load_kwargs["offload_state_dict"] = True
 
     base_model = AutoModelForCausalLM.from_pretrained(model_name, **load_kwargs)
     model = PeftModel.from_pretrained(base_model, adapter_path)
