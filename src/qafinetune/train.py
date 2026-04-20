@@ -196,7 +196,7 @@ def tokenize_records(dataset: Dataset, processor, text_backend, max_seq_length: 
     return dataset.map(_tokenize, remove_columns=dataset.column_names)
 
 
-def load_model_and_processor(model_name: str, bf16: bool):
+def load_model_and_processor(model_name: str, bf16: bool, runtime_profile: dict[str, Any], offload_dir: Path):
     compute_dtype = torch.bfloat16 if bf16 else torch.float16
     processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
     text_backend = resolve_text_backend(processor)
@@ -207,14 +207,21 @@ def load_model_and_processor(model_name: str, bf16: bool):
         bnb_4bit_use_double_quant=True,
         bnb_4bit_compute_dtype=compute_dtype,
     )
-    model = AutoModelForImageTextToText.from_pretrained(
-        model_name,
-        device_map="auto",
-        torch_dtype=compute_dtype,
-        quantization_config=quantization_config,
-        trust_remote_code=True,
-        attn_implementation="sdpa",
-    )
+    load_kwargs: dict[str, Any] = {
+        "device_map": "auto",
+        "dtype": compute_dtype,
+        "quantization_config": quantization_config,
+        "trust_remote_code": True,
+        "attn_implementation": "sdpa",
+    }
+    if runtime_profile.get("gpu_memory_gb", 0) <= 16:
+        ensure_dir(offload_dir)
+        gpu_budget_gb = max(10, int(runtime_profile["gpu_memory_gb"]) - 3)
+        load_kwargs["max_memory"] = {0: f"{gpu_budget_gb}GiB", "cpu": "48GiB"}
+        load_kwargs["low_cpu_mem_usage"] = True
+        load_kwargs["offload_folder"] = str(offload_dir)
+
+    model = AutoModelForImageTextToText.from_pretrained(model_name, **load_kwargs)
     model.config.use_cache = False
     model.gradient_checkpointing_enable()
     model = prepare_model_for_kbit_training(model)
@@ -279,7 +286,12 @@ def main() -> None:
     logger.info("Loaded %s valid training records", len(records))
 
     dataset = Dataset.from_list(records)
-    model, processor, text_backend = load_model_and_processor(args.model_name, preset["bf16"])
+    model, processor, text_backend = load_model_and_processor(
+        args.model_name,
+        preset["bf16"],
+        runtime_profile,
+        run_paths.run_dir / "offload",
+    )
 
     lora_config = LoraConfig(
         r=args.lora_rank,
@@ -383,4 +395,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+    os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
     main()

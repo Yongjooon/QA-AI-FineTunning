@@ -64,7 +64,13 @@ def resolve_text_backend(processor):
     return text_backend
 
 
-def load_base_and_adapter(model_name: str, adapter_path: str, bf16: bool):
+def load_base_and_adapter(
+    model_name: str,
+    adapter_path: str,
+    bf16: bool,
+    runtime_profile: dict[str, Any],
+    offload_dir: Path,
+):
     compute_dtype = torch.bfloat16 if bf16 else torch.float16
     processor = load_processor(adapter_path, model_name)
     text_backend = resolve_text_backend(processor)
@@ -76,14 +82,21 @@ def load_base_and_adapter(model_name: str, adapter_path: str, bf16: bool):
         bnb_4bit_compute_dtype=compute_dtype,
     )
 
-    base_model = AutoModelForImageTextToText.from_pretrained(
-        model_name,
-        device_map="auto",
-        torch_dtype=compute_dtype,
-        quantization_config=quantization_config,
-        trust_remote_code=True,
-        attn_implementation="sdpa",
-    )
+    load_kwargs: dict[str, Any] = {
+        "device_map": "auto",
+        "dtype": compute_dtype,
+        "quantization_config": quantization_config,
+        "trust_remote_code": True,
+        "attn_implementation": "sdpa",
+    }
+    if runtime_profile.get("gpu_memory_gb", 0) <= 16:
+        ensure_dir(offload_dir)
+        gpu_budget_gb = max(10, int(runtime_profile["gpu_memory_gb"]) - 3)
+        load_kwargs["max_memory"] = {0: f"{gpu_budget_gb}GiB", "cpu": "48GiB"}
+        load_kwargs["low_cpu_mem_usage"] = True
+        load_kwargs["offload_folder"] = str(offload_dir)
+
+    base_model = AutoModelForImageTextToText.from_pretrained(model_name, **load_kwargs)
     model = PeftModel.from_pretrained(base_model, adapter_path)
     model.eval()
     return model, processor, text_backend
@@ -128,6 +141,8 @@ def main() -> None:
         model_name=args.model_name,
         adapter_path=args.adapter_path,
         bf16=runtime_profile["bf16_supported"],
+        runtime_profile=runtime_profile,
+        offload_dir=output_paths["run_dir"] / "offload",
     )
 
     messages = build_messages(prompt)
@@ -208,4 +223,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+    os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
     main()

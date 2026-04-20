@@ -112,6 +112,16 @@ def suggest_training_preset(runtime_profile: dict[str, Any]) -> dict[str, Any]:
             "bf16": bf16,
             "fp16": not bf16,
         }
+    if memory_gb >= 15:
+        return {
+            "per_device_train_batch_size": 1,
+            "gradient_accumulation_steps": 32,
+            "max_seq_length": 768,
+            "lora_rank": 8,
+            "lora_alpha": 16,
+            "bf16": bf16,
+            "fp16": not bf16,
+        }
     return {
         "per_device_train_batch_size": 1,
         "gradient_accumulation_steps": 16,
