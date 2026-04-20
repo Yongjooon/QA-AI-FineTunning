@@ -43,6 +43,9 @@ def execute_cell(source: str, globals_dict: dict) -> None:
         if stripped.startswith("!"):
             print(f"[skip shell magic] {stripped}")
             continue
+        if stripped.startswith("%"):
+            print(f"[skip notebook magic] {stripped}")
+            continue
         executable_lines.append(line)
     code = "\n".join(executable_lines).strip()
     if code:
