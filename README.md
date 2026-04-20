@@ -26,7 +26,7 @@ Useful VS Code commands:
 ## What is included
 
 - `colab/01_train_gemma_qa.ipynb`
-  Training page for LoRA fine-tuning from a zipped dataset
+  Training page for LoRA fine-tuning from a local extracted dataset directory or zipped dataset
 - `colab/02_test_gemma_qa.ipynb`
   Inference page for generating Playwright-ready JSON and a human-readable scenario summary
 - `src/qafinetune/train.py`
@@ -39,16 +39,23 @@ Useful VS Code commands:
 ## Expected workflow
 
 1. Open `colab/01_train_gemma_qa.ipynb` in Colab.
-2. Install dependencies, mount Google Drive, upload your training zip, and run training.
+2. Install dependencies, mount Google Drive, point the notebook at your local extracted training data directory, and run training.
 3. Training artifacts are stored in Google Drive so you can resume from the latest checkpoint.
 4. After training completes, open `colab/02_test_gemma_qa.ipynb`.
 5. Upload an input zip and generate:
    - one Playwright JSON file
    - one text/markdown summary of the scenario
 
-## Supported training data formats inside the zip
+## Supported training data formats inside the training source
 
-The loader accepts `.json`, `.jsonl`, `.csv`, `.parquet`, `.txt`, and `.md`.
+The loader accepts either:
+
+- a local extracted directory inside the repository, or
+- a zipped bundle that contains supported files
+
+Supported file types are `.json`, `.jsonl`, `.csv`, `.parquet`, `.txt`, and `.md`.
+
+When a directory contains `train_raw.jsonl`, the loader prioritizes that file and ignores evaluation/sample files.
 
 For structured records, it looks for common fields such as:
 

@@ -1,0 +1,233 @@
+{
+  "id": "raw-v4-234d4511d40a",
+  "task": "Use the raw Playwright artifact bundle to generate grounded QA scenarios in executable JSON.",
+  "input": {
+    "page_id": "p001_www_daum_net_",
+    "source_zip": "2026-04-17T09-38-00-6751880b.zip",
+    "page": {
+      "url": "https://www.daum.net/",
+      "title": "Daum",
+      "page_type_hint": "portal_with_search",
+      "has_static_snapshot": true
+    },
+    "source_files_present": [
+      "final-report.json",
+      "static.json",
+      "trigger-candidates.json",
+      "trigger-results/*.json"
+    ],
+    "visible_texts": [
+      "연예 본문 바로가기",
+      "스포츠 본문 바로가기",
+      "카페・스토리 본문 바로가기",
+      "관심사 본문 바로가기",
+      "쇼핑 본문 바로가기",
+      "웹 접근성 안내",
+      "지도",
+      "금융",
+      "메일",
+      "스포츠",
+      "날씨",
+      "게임",
+      "환율",
+      "LIVE",
+      "주요 뉴스"
+    ],
+    "links": [
+      {
+        "text": "전체 서비스 바로가기",
+        "href": "#gnbTitle",
+        "role": "link",
+        "selectorHint": "a",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "해외야구",
+        "href": "https://sports.daum.net/worldbaseball",
+        "role": "tab",
+        "selectorHint": "a.link_item",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "옥션",
+        "href": "https://adcr.shopping.naver.com/adclk.nhn?x=IepisLfdnsosiR5gnwzzPP%2F%2F%2Fw%3D%3DsBNhh49xnKJpRW5FLaN5XQLNbqRkBAljHV0lCA11VPcD%2B0KmL2QgFmV0wz2YNnrlXT4%2BvcYDS9x9F8nOMKB4vmsdELK5ox9LGux7jtUCk3NEiOXAVbLHBeor6KHgu9MEGf2bY105fKugzy2Us0ffzRmlVnz0iBGgOR7NH0TMnoxZRH5nw3C5uwEgsGbJ8tcM5dMf%2Fy8XpBsKj8EEm1bzMQLXexqvGue9Gba8WZzmoKCviHt3%2BxQ1pjFkEux9OZ5EGel%2F4fbdzAOyiY6WlL41Czmt6uOeSNqa8VmwSlB0PcTKnLMWGLq%2FXVG0XuY8o2drQXjXKAsCu4zQzv3RzoKdeYkja06Y8zclW7mEFzZBnCeu79%2F0IKiamtWvkb9KDvzDy",
+        "role": "link",
+        "selectorHint": "a.link_item",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "카페・스토리 본문 바로가기",
+        "href": "#cafeTitle",
+        "role": "link",
+        "selectorHint": "a",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "주요 뉴스",
+        "href": "#none",
+        "role": "button",
+        "selectorHint": "a.link_opt",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "종합",
+        "href": "https://entertain.daum.net/",
+        "role": "tab",
+        "selectorHint": "a.link_item",
+        "tagName": "a",
+        "id": null
+      }
+    ],
+    "form_controls": [
+      {
+        "role": null,
+        "type": "text",
+        "id": "q",
+        "selectorHint": "#q",
+        "functionalCategory": "input"
+      }
+    ],
+    "trigger_candidates": [
+      {
+        "triggerId": "trigger-3",
+        "triggerType": "click",
+        "text": "홈 화면 설정",
+        "role": null,
+        "selectorHint": "#pagSetting",
+        "reason": "has aria-expanded",
+        "priority": 10,
+        "resultStatus": "success",
+        "mutationCount": 7,
+        "newTexts": [
+          "화면 배율",
+          "더 크게",
+          "화면 스타일",
+          "라이트 모드",
+          "다크 모드",
+          "기기 설정"
+        ],
+        "newNodeCount": 20
+      },
+      {
+        "triggerId": "trigger-8",
+        "triggerType": "click",
+        "text": "뉴스",
+        "role": "button",
+        "selectorHint": "a.link_tit",
+        "reason": "role=button",
+        "priority": 4,
+        "resultStatus": "success",
+        "mutationCount": 25,
+        "newTexts": [
+          "뉴스홈",
+          "기후ㆍ환경",
+          "사회",
+          "경제",
+          "정치",
+          "국제",
+          "문화",
+          "생활"
+        ],
+        "newNodeCount": 19
+      },
+      {
+        "triggerId": "trigger-6",
+        "triggerType": "click",
+        "text": "실시간 트렌드 펼치기",
+        "role": null,
+        "selectorHint": "button.btn_fold",
+        "reason": "button element",
+        "priority": 4,
+        "resultStatus": "success",
+        "mutationCount": 12,
+        "newTexts": [
+          "프로야구 우천 취소",
+          "리버스",
+          "살목지",
+          "나솔",
+          "10",
+          "모자무싸"
+        ],
+        "newNodeCount": 38
+      },
+      {
+        "triggerId": "trigger-13",
+        "triggerType": "click",
+        "text": "다음페이지 보기",
+        "role": "button",
+        "selectorHint": "a.link_next",
+        "reason": "role=button",
+        "priority": 4,
+        "resultStatus": "success",
+        "mutationCount": 45,
+        "newTexts": [
+          "분석 19:00 KBL 부산 KCC - 점 원주 DB - 점문자 1회초 KBO 키움 0 점 KT 0 점"
+        ],
+        "newNodeCount": 0
+      }
+    ]
+  },
+  "output": {
+    "page_id": "p001_www_daum_net_",
+    "scenarios": [
+      {
+        "scenarioId": "P001_WWW_DAUM_NET-OPEN",
+        "title": "페이지 진입 확인 테스트",
+        "startUrl": "https://www.daum.net/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.daum.net/"
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "page",
+              "matcher": "toHaveURL",
+              "value": "https://www.daum.net/"
+            }
+          }
+        ]
+      },
+      {
+        "scenarioId": "P001_WWW_DAUM_NET-LINK-1",
+        "title": "해외야구 링크 이동 테스트",
+        "startUrl": "https://www.daum.net/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.daum.net/"
+          },
+          {
+            "type": "click",
+            "locator": {
+              "strategy": "role",
+              "role": "link",
+              "name": "해외야구"
+            }
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "page",
+              "matcher": "toHaveURL",
+              "value": "https://sports.daum.net/worldbaseball"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "dataset_version": "v4",
+    "input_style": "semi_raw_bundle",
+    "variant": "evidence_window",
+    "grounded_only": true,
+    "source_page_type": "portal_with_search"
+  }
+}

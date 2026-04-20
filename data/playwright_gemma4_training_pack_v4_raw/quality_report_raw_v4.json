@@ -1,0 +1,57 @@
+{
+  "dataset_version": "v4_raw",
+  "seed": 42,
+  "grounding_checks": {
+    "url_expectations_not_in_input": 0,
+    "visible_text_assertions_not_in_input": 0
+  },
+  "train_stats": {
+    "records": 94,
+    "avg_scenarios_per_record": 1.94,
+    "avg_steps_per_scenario": 2.48,
+    "page_type_distribution": {
+      "portal_with_search": 26,
+      "notice": 17,
+      "service_directory": 17,
+      "policy": 34
+    },
+    "variant_distribution": {
+      "minimal": 25,
+      "evidence_window": 12,
+      "full": 31,
+      "link_focus": 10,
+      "trigger_focus": 12,
+      "form_focus": 4
+    }
+  },
+  "eval_stats": {
+    "records": 16,
+    "avg_scenarios_per_record": 1.62,
+    "avg_steps_per_scenario": 2.38,
+    "page_type_distribution": {
+      "portal_with_search": 4,
+      "notice": 3,
+      "service_directory": 3,
+      "policy": 6
+    },
+    "variant_distribution": {
+      "form_focus": 1,
+      "minimal": 8,
+      "trigger_focus": 1,
+      "evidence_window": 1,
+      "link_focus": 3,
+      "full": 2
+    }
+  },
+  "step_type_distribution": {
+    "goto": 208,
+    "expect": 208,
+    "click": 88,
+    "fill": 10
+  },
+  "locator_strategy_distribution": {
+    "role": 80,
+    "text": 16,
+    "locator": 2
+  }
+}

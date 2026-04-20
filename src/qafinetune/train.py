@@ -20,7 +20,7 @@ from transformers import (
     TrainingArguments,
 )
 
-from qafinetune.io_utils import find_latest_checkpoint, load_training_records_from_zip
+from qafinetune.io_utils import find_latest_checkpoint, load_training_records_from_dir, load_training_records_from_zip
 from qafinetune.runtime import detect_runtime, ensure_dir, load_json, save_json, setup_logging, suggest_training_preset, utc_timestamp
 
 
@@ -101,7 +101,7 @@ class RunStateCallback(TrainerCallback):
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Fine-tune a Gemma 4 model on QA scenario data.")
     parser.add_argument("--model_name", required=True)
-    parser.add_argument("--train_zip", required=True)
+    parser.add_argument("--train_source", "--train_zip", dest="train_source", required=True)
     parser.add_argument("--output_root", required=True)
     parser.add_argument("--run_name", default="")
     parser.add_argument("--resume_mode", choices=["auto", "never", "path"], default="auto")
@@ -231,9 +231,9 @@ def resolve_resume_checkpoint(args: argparse.Namespace, run_paths: RunPaths) -> 
 
 def main() -> None:
     args = parse_args()
-    train_zip_path = Path(args.train_zip)
-    if not train_zip_path.exists():
-        raise FileNotFoundError(f"Training zip was not found: {train_zip_path}")
+    train_source_path = Path(args.train_source)
+    if not train_source_path.exists():
+        raise FileNotFoundError(f"Training source was not found: {train_source_path}")
 
     run_paths = resolve_run_paths(args.output_root, args.run_name)
     logger = setup_logging(run_paths.logs_dir / "train.log")
@@ -257,7 +257,10 @@ def main() -> None:
     logger.info("Runtime profile: %s", json.dumps(runtime_profile, ensure_ascii=False))
     logger.info("Selected preset: %s", json.dumps(preset, ensure_ascii=False))
 
-    records, dataset_profile = load_training_records_from_zip(args.train_zip, run_paths.extract_dir)
+    if train_source_path.is_dir():
+        records, dataset_profile = load_training_records_from_dir(train_source_path)
+    else:
+        records, dataset_profile = load_training_records_from_zip(train_source_path, run_paths.extract_dir)
     if args.max_train_samples > 0:
         records = records[: args.max_train_samples]
         dataset_profile["record_count_after_limit"] = len(records)
@@ -322,7 +325,7 @@ def main() -> None:
         "checkpoints_dir": str(run_paths.checkpoints_dir),
         "final_model_dir": str(run_paths.final_model_dir),
         "model_name": args.model_name,
-        "train_zip": str(train_zip_path.resolve()),
+        "train_source": str(train_source_path.resolve()),
         "resume_mode": args.resume_mode,
         "resume_checkpoint": resume_checkpoint,
         "max_seq_length": args.max_seq_length,

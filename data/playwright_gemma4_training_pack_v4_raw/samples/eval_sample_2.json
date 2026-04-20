@@ -1,0 +1,164 @@
+{
+  "id": "raw-v4-ee710fae362d",
+  "task": "Generate executable QA scenario JSON from the raw Playwright evidence. Keep every step grounded in the input.",
+  "input": {
+    "page_id": "p001_www_naver_com_",
+    "source_zip": "2026-04-17T09-33-43-e6dfcd00(2).zip",
+    "page": {
+      "url": "https://www.naver.com/",
+      "title": "NAVER",
+      "page_type_hint": "portal_with_search",
+      "has_static_snapshot": true
+    },
+    "source_files_present": [
+      "final-report.json",
+      "static.json",
+      "trigger-candidates.json",
+      "trigger-results/*.json"
+    ],
+    "visible_texts": [
+      "언론사편집",
+      "건강",
+      "관심사 블록 바로가기",
+      "추천",
+      "위젯 보드 바로가기",
+      "LIVE"
+    ],
+    "links": [
+      {
+        "text": "증시",
+        "href": "https://finance.naver.com/",
+        "role": "link",
+        "selectorHint": "a.DailyBoardView-module__header_title___Uk3ix",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "네이버 비즈니스 스쿨",
+        "href": "https://bizschool.naver.com/",
+        "role": "link",
+        "selectorHint": "a.link_partner",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "아이디 찾기",
+        "href": "https://nid.naver.com/user2/api/route?m=routeIdInquiry",
+        "role": "link",
+        "selectorHint": "a.MyView-module__link_more___sbxGh",
+        "tagName": "a",
+        "id": null
+      }
+    ],
+    "form_controls": [
+      {
+        "role": "combobox",
+        "type": "search",
+        "id": "query",
+        "selectorHint": "#query",
+        "functionalCategory": "search"
+      }
+    ],
+    "trigger_candidates": [
+      {
+        "triggerId": "trigger-11",
+        "triggerType": "click",
+        "text": "바로가기 펼침",
+        "role": "button",
+        "selectorHint": "a.link_service",
+        "reason": "role=button",
+        "priority": 4,
+        "resultStatus": "success",
+        "mutationCount": 15,
+        "newTexts": [
+          "도서",
+          "스포츠",
+          "치지직",
+          "전체서비스날씨네이버페이네이버TV도서밴드사전쇼핑라이브스포츠시리즈웹소설지식iN치지직캘린더해피빈MYBOXVIBE",
+          "속보구자현 \"국조, 재판에 영향 주려 한다는 평가 받아선 안돼\"",
+          "햇볕 내리쬐는 맑은 주말 낮 기온 30도 육박…제주에는 비",
+          "李대통령, 홍준표 전 대구시장과 오찬…'통합의지' 부각",
+          "환율 USD1,480.30하락0.50-0.03%3개월 차트"
+        ],
+        "newNodeCount": 6
+      },
+      {
+        "triggerId": "trigger-1",
+        "triggerType": "click",
+        "text": "확장 영역",
+        "role": null,
+        "selectorHint": "#topAsideButton",
+        "reason": "has aria-expanded",
+        "priority": 10,
+        "resultStatus": "success",
+        "mutationCount": 14,
+        "newTexts": [
+          "속보구자현 \"국조, 재판에 영향 주려 한다는 평가 받아선 안돼\"",
+          "햇볕 내리쬐는 맑은 주말 낮 기온 30도 육박…제주에는 비",
+          "李대통령, 홍준표 전 대구시장과 오찬…'통합의지' 부각",
+          "환율 USD1,480.30하락0.50-0.03%3개월 차트",
+          "유로스톡스505,954.45상승21.17+0.36%"
+        ],
+        "newNodeCount": 0
+      }
+    ]
+  },
+  "output": {
+    "page_id": "p001_www_naver_com_",
+    "scenarios": [
+      {
+        "scenarioId": "P001_WWW_NAVER_COM-OPEN",
+        "title": "페이지 진입 확인 테스트",
+        "startUrl": "https://www.naver.com/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.naver.com/"
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "page",
+              "matcher": "toHaveURL",
+              "value": "https://www.naver.com/"
+            }
+          }
+        ]
+      },
+      {
+        "scenarioId": "P001_WWW_NAVER_COM-LINK-1",
+        "title": "증시 링크 이동 테스트",
+        "startUrl": "https://www.naver.com/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.naver.com/"
+          },
+          {
+            "type": "click",
+            "locator": {
+              "strategy": "role",
+              "role": "link",
+              "name": "증시"
+            }
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "page",
+              "matcher": "toHaveURL",
+              "value": "https://finance.naver.com/"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "dataset_version": "v4",
+    "input_style": "semi_raw_bundle",
+    "variant": "minimal",
+    "grounded_only": true,
+    "source_page_type": "portal_with_search"
+  }
+}

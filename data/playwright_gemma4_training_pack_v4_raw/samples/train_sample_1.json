@@ -1,0 +1,162 @@
+{
+  "id": "raw-v4-bddc5171734e",
+  "task": "Use the raw Playwright artifact bundle to generate grounded QA scenarios in executable JSON.",
+  "input": {
+    "page_id": "p001_www_daum_net_",
+    "source_zip": "2026-04-17T09-38-00-6751880b.zip",
+    "page": {
+      "url": "https://www.daum.net/",
+      "title": "Daum",
+      "page_type_hint": "portal_with_search",
+      "has_static_snapshot": true
+    },
+    "source_files_present": [
+      "final-report.json",
+      "static.json",
+      "trigger-candidates.json",
+      "trigger-results/*.json"
+    ],
+    "visible_texts": [
+      "스포츠 본문 바로가기",
+      "게임",
+      "환율",
+      "로그인 & MY정보 바로가기",
+      "주요 서비스 바로가기",
+      "웹 접근성 안내"
+    ],
+    "links": [
+      {
+        "text": "옥션",
+        "href": "https://adcr.shopping.naver.com/adclk.nhn?x=IepisLfdnsosiR5gnwzzPP%2F%2F%2Fw%3D%3DsBNhh49xnKJpRW5FLaN5XQLNbqRkBAljHV0lCA11VPcD%2B0KmL2QgFmV0wz2YNnrlXT4%2BvcYDS9x9F8nOMKB4vmsdELK5ox9LGux7jtUCk3NEiOXAVbLHBeor6KHgu9MEGf2bY105fKugzy2Us0ffzRmlVnz0iBGgOR7NH0TMnoxZRH5nw3C5uwEgsGbJ8tcM5dMf%2Fy8XpBsKj8EEm1bzMQLXexqvGue9Gba8WZzmoKCviHt3%2BxQ1pjFkEux9OZ5EGel%2F4fbdzAOyiY6WlL41Czmt6uOeSNqa8VmwSlB0PcTKnLMWGLq%2FXVG0XuY8o2drQXjXKAsCu4zQzv3RzoKdeYkja06Y8zclW7mEFzZBnCeu79%2F0IKiamtWvkb9KDvzDy",
+        "role": "link",
+        "selectorHint": "a.link_item",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "농구",
+        "href": "https://sports.daum.net/basketball",
+        "role": "tab",
+        "selectorHint": "a.link_item",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "해외축구",
+        "href": "https://sports.daum.net/worldsoccer",
+        "role": "tab",
+        "selectorHint": "a.link_item",
+        "tagName": "a",
+        "id": null
+      }
+    ],
+    "form_controls": [
+      {
+        "role": null,
+        "type": "text",
+        "id": "q",
+        "selectorHint": "#q",
+        "functionalCategory": "input"
+      }
+    ],
+    "trigger_candidates": [
+      {
+        "triggerId": "trigger-4",
+        "triggerType": "click",
+        "text": "입력 도구",
+        "role": null,
+        "selectorHint": "#VKIBtn",
+        "reason": "button element",
+        "priority": 4,
+        "resultStatus": "success",
+        "mutationCount": 4,
+        "newTexts": [
+          "한글",
+          "bksp",
+          "shift"
+        ],
+        "newNodeCount": 50
+      },
+      {
+        "triggerId": "trigger-8",
+        "triggerType": "click",
+        "text": "뉴스",
+        "role": "button",
+        "selectorHint": "a.link_tit",
+        "reason": "role=button",
+        "priority": 4,
+        "resultStatus": "success",
+        "mutationCount": 25,
+        "newTexts": [
+          "뉴스홈",
+          "기후ㆍ환경",
+          "사회",
+          "경제",
+          "정치",
+          "국제",
+          "문화",
+          "생활"
+        ],
+        "newNodeCount": 19
+      }
+    ]
+  },
+  "output": {
+    "page_id": "p001_www_daum_net_",
+    "scenarios": [
+      {
+        "scenarioId": "P001_WWW_DAUM_NET-OPEN",
+        "title": "페이지 진입 확인 테스트",
+        "startUrl": "https://www.daum.net/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.daum.net/"
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "page",
+              "matcher": "toHaveURL",
+              "value": "https://www.daum.net/"
+            }
+          }
+        ]
+      },
+      {
+        "scenarioId": "P001_WWW_DAUM_NET-LINK-1",
+        "title": "옥션 링크 이동 테스트",
+        "startUrl": "https://www.daum.net/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.daum.net/"
+          },
+          {
+            "type": "click",
+            "locator": {
+              "strategy": "role",
+              "role": "link",
+              "name": "옥션"
+            }
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "page",
+              "matcher": "toHaveURL",
+              "value": "https://adcr.shopping.naver.com/adclk.nhn?x=IepisLfdnsosiR5gnwzzPP%2F%2F%2Fw%3D%3DsBNhh49xnKJpRW5FLaN5XQLNbqRkBAljHV0lCA11VPcD%2B0KmL2QgFmV0wz2YNnrlXT4%2BvcYDS9x9F8nOMKB4vmsdELK5ox9LGux7jtUCk3NEiOXAVbLHBeor6KHgu9MEGf2bY105fKugzy2Us0ffzRmlVnz0iBGgOR7NH0TMnoxZRH5nw3C5uwEgsGbJ8tcM5dMf%2Fy8XpBsKj8EEm1bzMQLXexqvGue9Gba8WZzmoKCviHt3%2BxQ1pjFkEux9OZ5EGel%2F4fbdzAOyiY6WlL41Czmt6uOeSNqa8VmwSlB0PcTKnLMWGLq%2FXVG0XuY8o2drQXjXKAsCu4zQzv3RzoKdeYkja06Y8zclW7mEFzZBnCeu79%2F0IKiamtWvkb9KDvzDy"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "dataset_version": "v4",
+    "input_style": "semi_raw_bundle",
+    "variant": "minimal",
+    "grounded_only": true,
+    "source_page_type": "portal_with_search"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "id": "raw-v4-0a725e7a9e40",
+  "task": "Generate executable QA scenario JSON from the raw Playwright evidence. Keep every step grounded in the input.",
+  "input": {
+    "page_id": "p001_www_daum_net_",
+    "source_zip": "2026-04-17T09-38-00-6751880b.zip",
+    "page": {
+      "url": "https://www.daum.net/",
+      "title": "Daum",
+      "page_type_hint": "portal_with_search",
+      "has_static_snapshot": true
+    },
+    "source_files_present": [
+      "final-report.json",
+      "static.json",
+      "trigger-candidates.json",
+      "trigger-results/*.json"
+    ],
+    "visible_texts": [
+      "뉴스 본문 바로가기",
+      "‘李와 떡볶이 먹방’ 황교익, 문화관광연구원장에 임명",
+      "스포츠 본문 바로가기",
+      "韓 유조선, 홍해 통과했다…호르무즈 봉쇄 이후 처음",
+      "주요 서비스 바로가기",
+      "라이브",
+      "추천",
+      "환율",
+      "포토뷰",
+      "AI인재가 곧 국력 … 고숙련이민 '골든타임'"
+    ],
+    "links": [
+      {
+        "text": "주요 서비스 바로가기",
+        "href": "#mainServiceTitle",
+        "role": "link",
+        "selectorHint": "a",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "지도",
+        "href": "https://map.kakao.com/?referrer=daumtop",
+        "role": "link",
+        "selectorHint": "a.link_service",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "종합",
+        "href": "https://sports.daum.net/",
+        "role": "tab",
+        "selectorHint": "a.link_item",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "메일",
+        "href": "https://mail.daum.net",
+        "role": "link",
+        "selectorHint": "a.link_service",
+        "tagName": "a",
+        "id": null
+      }
+    ],
+    "form_controls": [
+      {
+        "role": null,
+        "type": "text",
+        "id": "q",
+        "selectorHint": "#q",
+        "functionalCategory": "input"
+      }
+    ],
+    "trigger_candidates": [
+      {
+        "triggerId": "trigger-5",
+        "triggerType": "click",
+        "text": "검색",
+        "role": null,
+        "selectorHint": "button.btn_ksearch",
+        "reason": "button element",
+        "priority": 4,
+        "resultStatus": "navigated_to_unknown",
+        "mutationCount": 0,
+        "newTexts": [],
+        "newNodeCount": 0
+      },
+      {
+        "triggerId": "trigger-4",
+        "triggerType": "click",
+        "text": "입력 도구",
+        "role": null,
+        "selectorHint": "#VKIBtn",
+        "reason": "button element",
+        "priority": 4,
+        "resultStatus": "success",
+        "mutationCount": 4,
+        "newTexts": [
+          "한글",
+          "bksp",
+          "shift"
+        ],
+        "newNodeCount": 50
+      }
+    ]
+  },
+  "output": {
+    "page_id": "p001_www_daum_net_",
+    "scenarios": [
+      {
+        "scenarioId": "P001_WWW_DAUM_NET-OPEN",
+        "title": "페이지 진입 확인 테스트",
+        "startUrl": "https://www.daum.net/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.daum.net/"
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "page",
+              "matcher": "toHaveURL",
+              "value": "https://www.daum.net/"
+            }
+          }
+        ]
+      },
+      {
+        "scenarioId": "P001_WWW_DAUM_NET-FORM-1",
+        "title": "입력 필드 값 반영 테스트",
+        "startUrl": "https://www.daum.net/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.daum.net/"
+          },
+          {
+            "type": "fill",
+            "locator": {
+              "strategy": "locator",
+              "value": "#q"
+            },
+            "value": "sample text"
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "locator",
+              "locator": {
+                "strategy": "locator",
+                "value": "#q"
+              },
+              "matcher": "toHaveValue",
+              "value": "sample text"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "dataset_version": "v4",
+    "input_style": "semi_raw_bundle",
+    "variant": "form_focus",
+    "grounded_only": true,
+    "source_page_type": "portal_with_search"
+  }
+}

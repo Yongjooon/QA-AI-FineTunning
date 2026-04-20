@@ -1,0 +1,444 @@
+{
+  "id": "raw-v4-1443316a06fa",
+  "task": "Use the raw Playwright artifact bundle to generate grounded QA scenarios in executable JSON.",
+  "input": {
+    "page_id": "p001_www_naver_com_",
+    "source_zip": "2026-04-17T07-51-40-218aa44c(3).zip",
+    "page": {
+      "url": "https://www.naver.com/",
+      "title": "NAVER",
+      "page_type_hint": "portal_with_search",
+      "has_static_snapshot": true
+    },
+    "source_files_present": [
+      "final-report.json",
+      "static.json",
+      "trigger-candidates.json",
+      "trigger-results/*.json"
+    ],
+    "visible_texts": [
+      "상단영역 바로가기",
+      "서비스 메뉴 바로가기",
+      "새소식 블록 바로가기",
+      "쇼핑 블록 바로가기",
+      "관심사 블록 바로가기",
+      "MY 영역 바로가기",
+      "위젯 보드 바로가기",
+      "보기 설정 바로가기",
+      "웨일 설치",
+      "블로그",
+      "스토어",
+      "부동산",
+      "치지직",
+      "뉴스스탠드",
+      "언론사편집",
+      "엔터",
+      "스포츠",
+      "LIVE",
+      "경제",
+      "쇼핑투데이",
+      "전체언론사",
+      "연합뉴스",
+      "국힘 대구시장 후보 추경호·유영하 압축…충북 윤갑근 본경선행",
+      "뉴스홈",
+      "추천",
+      "카테크",
+      "웹툰",
+      "패션뷰티",
+      "리빙푸드",
+      "책방"
+    ],
+    "links": [
+      {
+        "text": "웨일 설치",
+        "href": "https://whale.naver.com/ko?wpid=main_theme1",
+        "role": "link",
+        "selectorHint": "a.link_top",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "뉴스스탠드",
+        "href": "#",
+        "role": "tab",
+        "selectorHint": "a.ContentHeaderView-module__tab_text___IuWnG",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "언론사편집",
+        "href": "#",
+        "role": "tab",
+        "selectorHint": "a.ContentHeaderView-module__tab_text___IuWnG",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "엔터",
+        "href": "#",
+        "role": "tab",
+        "selectorHint": "a.ContentHeaderView-module__tab___uYoNi",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "스포츠",
+        "href": "#",
+        "role": "tab",
+        "selectorHint": "a.ContentHeaderView-module__tab___uYoNi",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "경제",
+        "href": "#",
+        "role": "tab",
+        "selectorHint": "a.ContentHeaderView-module__tab___uYoNi",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "쇼핑투데이",
+        "href": "#",
+        "role": "tab",
+        "selectorHint": "a.ContentHeaderView-module__tab___uYoNi",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "전체언론사",
+        "href": "#",
+        "role": "button",
+        "selectorHint": "a.ContentHeaderSubView-module__btn_more___HnWNR",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "연합뉴스",
+        "href": "https://news.naver.com/main/list.naver?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y",
+        "role": "link",
+        "selectorHint": "a.ContentHeaderSubView-module__news_media___YJm6A",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "국힘 대구시장 후보 추경호·유영하 압축…충북 윤갑근 본경선행",
+        "href": "https://news.naver.com/main/list.naver?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y&aid=0016027889",
+        "role": "link",
+        "selectorHint": "a",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "뉴스스탠드",
+        "href": "https://newsstand.naver.com/",
+        "role": "link",
+        "selectorHint": "a.ContentHeaderSubView-module__link_home___hdZDg.ContentHeaderSubView-module__sub___T9JeN",
+        "tagName": "a",
+        "id": null
+      },
+      {
+        "text": "뉴스홈",
+        "href": "https://news.naver.com/",
+        "role": "link",
+        "selectorHint": "a.ContentHeaderSubView-module__link_home___hdZDg",
+        "tagName": "a",
+        "id": null
+      }
+    ],
+    "form_controls": [
+      {
+        "role": "combobox",
+        "type": "search",
+        "id": "query",
+        "selectorHint": "#query",
+        "functionalCategory": "search"
+      }
+    ],
+    "trigger_candidates": [
+      {
+        "triggerId": "trigger-4",
+        "triggerType": "click",
+        "text": "홈 설정",
+        "role": "button",
+        "selectorHint": "#viewSetting",
+        "reason": "has aria-expanded",
+        "priority": 10,
+        "resultStatus": "success",
+        "mutationCount": 19,
+        "newTexts": [
+          "위젯 보드",
+          "캘린더",
+          "로그인하기",
+          "29",
+          "30",
+          "31",
+          "10",
+          "11"
+        ],
+        "newNodeCount": 50
+      },
+      {
+        "triggerId": "trigger-1",
+        "triggerType": "click",
+        "text": "확장 영역",
+        "role": null,
+        "selectorHint": "#topAsideButton",
+        "reason": "has aria-expanded",
+        "priority": 10,
+        "resultStatus": "success",
+        "mutationCount": 15,
+        "newTexts": [
+          "코스피, 美·이란 종전 협상 앞두고 '숨 고르기'…6,190선",
+          "李대통령, 홍준표 전 대구시장과 오찬…'통합의지' 부각",
+          "국힘 대구시장 후보 추경호·유영하 압축…충북 윤갑근 본경선행",
+          "환율 USD1,482.90상승2.10+0.14%3개월 차트",
+          "유로스톡스505,940.65상승7.37+0.12%"
+        ],
+        "newNodeCount": 0
+      },
+      {
+        "triggerId": "trigger-2",
+        "triggerType": "click",
+        "text": "알림",
+        "role": null,
+        "selectorHint": "button.btn_notify",
+        "reason": "has aria-expanded",
+        "priority": 10,
+        "resultStatus": "navigated_to_login_auth_host",
+        "mutationCount": 0,
+        "newTexts": [],
+        "newNodeCount": 0
+      },
+      {
+        "triggerId": "trigger-7",
+        "triggerType": "click",
+        "text": "자동완성/최근검색어펼치기",
+        "role": null,
+        "selectorHint": "#nautocomplete",
+        "reason": "button element",
+        "priority": 4,
+        "resultStatus": "success",
+        "mutationCount": 31,
+        "newTexts": [
+          "자동완성 끄기",
+          "도움말",
+          "신고",
+          "닫기",
+          "코스피, 美·이란 종전 협상 앞두고 '숨 고르기'…6,190선"
+        ],
+        "newNodeCount": 5
+      },
+      {
+        "triggerId": "trigger-11",
+        "triggerType": "click",
+        "text": "바로가기 펼침",
+        "role": "button",
+        "selectorHint": "a.link_service",
+        "reason": "role=button",
+        "priority": 4,
+        "resultStatus": "success",
+        "mutationCount": 15,
+        "newTexts": [
+          "도서",
+          "스포츠",
+          "치지직",
+          "전체서비스날씨네이버페이네이버TV도서밴드사전쇼핑라이브스포츠시리즈웹소설지식iN치지직캘린더해피빈MYBOXVIBE",
+          "코스피, 美·이란 종전 협상 앞두고 '숨 고르기'…6,190선",
+          "李대통령, 홍준표 전 대구시장과 오찬…'통합의지' 부각",
+          "국힘 대구시장 후보 추경호·유영하 압축…충북 윤갑근 본경선행",
+          "환율 USD1,483.10상승2.30+0.16%3개월 차트"
+        ],
+        "newNodeCount": 7
+      },
+      {
+        "triggerId": "trigger-6",
+        "triggerType": "click",
+        "text": "검색",
+        "role": null,
+        "selectorHint": "button.btn_search",
+        "reason": "button element",
+        "priority": 4,
+        "resultStatus": "navigated_to_unknown",
+        "mutationCount": 0,
+        "newTexts": [],
+        "newNodeCount": 0
+      }
+    ]
+  },
+  "output": {
+    "page_id": "p001_www_naver_com_",
+    "scenarios": [
+      {
+        "scenarioId": "P001_WWW_NAVER_COM-OPEN",
+        "title": "페이지 진입 확인 테스트",
+        "startUrl": "https://www.naver.com/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.naver.com/"
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "page",
+              "matcher": "toHaveURL",
+              "value": "https://www.naver.com/"
+            }
+          }
+        ]
+      },
+      {
+        "scenarioId": "P001_WWW_NAVER_COM-LINK-1",
+        "title": "웨일 설치 링크 이동 테스트",
+        "startUrl": "https://www.naver.com/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.naver.com/"
+          },
+          {
+            "type": "click",
+            "locator": {
+              "strategy": "role",
+              "role": "link",
+              "name": "웨일 설치"
+            }
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "page",
+              "matcher": "toHaveURL",
+              "value": "https://whale.naver.com/ko?wpid=main_theme1"
+            }
+          }
+        ]
+      },
+      {
+        "scenarioId": "P001_WWW_NAVER_COM-LINK-2",
+        "title": "연합뉴스 링크 이동 테스트",
+        "startUrl": "https://www.naver.com/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.naver.com/"
+          },
+          {
+            "type": "click",
+            "locator": {
+              "strategy": "role",
+              "role": "link",
+              "name": "연합뉴스"
+            }
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "page",
+              "matcher": "toHaveURL",
+              "value": "https://news.naver.com/main/list.naver?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y"
+            }
+          }
+        ]
+      },
+      {
+        "scenarioId": "P001_WWW_NAVER_COM-FORM-1",
+        "title": "입력 필드 값 반영 테스트",
+        "startUrl": "https://www.naver.com/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.naver.com/"
+          },
+          {
+            "type": "fill",
+            "locator": {
+              "strategy": "role",
+              "role": "combobox"
+            },
+            "value": "테스트 검색어"
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "locator",
+              "locator": {
+                "strategy": "role",
+                "role": "combobox"
+              },
+              "matcher": "toHaveValue",
+              "value": "테스트 검색어"
+            }
+          }
+        ]
+      },
+      {
+        "scenarioId": "P001_WWW_NAVER_COM-TRIGGER-1",
+        "title": "홈 설정 노출 테스트",
+        "startUrl": "https://www.naver.com/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.naver.com/"
+          },
+          {
+            "type": "click",
+            "locator": {
+              "strategy": "role",
+              "role": "button",
+              "name": "홈 설정"
+            }
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "locator",
+              "locator": {
+                "strategy": "text",
+                "value": "위젯 보드"
+              },
+              "matcher": "toBeVisible"
+            }
+          }
+        ]
+      },
+      {
+        "scenarioId": "P001_WWW_NAVER_COM-TRIGGER-2",
+        "title": "확장 영역 노출 테스트",
+        "startUrl": "https://www.naver.com/",
+        "steps": [
+          {
+            "type": "goto",
+            "url": "https://www.naver.com/"
+          },
+          {
+            "type": "click",
+            "locator": {
+              "strategy": "text",
+              "value": "확장 영역"
+            }
+          },
+          {
+            "type": "expect",
+            "assertion": {
+              "target": "locator",
+              "locator": {
+                "strategy": "text",
+                "value": "코스피, 美·이란 종전 협상 앞두고 '숨 고르기'…6,190선"
+              },
+              "matcher": "toBeVisible"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "dataset_version": "v4",
+    "input_style": "semi_raw_bundle",
+    "variant": "full",
+    "grounded_only": true,
+    "source_page_type": "portal_with_search"
+  }
+}

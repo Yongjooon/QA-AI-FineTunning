@@ -67,6 +67,33 @@ def list_data_files(root_dir: str | Path) -> list[Path]:
     return sorted(path for path in root.rglob("*") if path.is_file() and path.suffix.lower() in supported)
 
 
+def select_training_files(root_dir: str | Path) -> list[Path]:
+    root = Path(root_dir)
+    exact_priority = [
+        root / "train_raw.jsonl",
+        root / "train.jsonl",
+        root / "train.json",
+        root / "train.csv",
+        root / "train.parquet",
+    ]
+    exact_matches = [path for path in exact_priority if path.exists()]
+    if exact_matches:
+        return exact_matches
+
+    selected: list[Path] = []
+    for path in list_data_files(root):
+        rel_path = str(path.relative_to(root)).replace("\\", "/").lower()
+        name = path.name.lower()
+        if rel_path.startswith("samples/"):
+            continue
+        if any(token in rel_path for token in ["eval", "test", "schema", "quality_report", "guideline", "readme", "builder"]):
+            continue
+        if name.endswith((".md", ".txt")):
+            continue
+        selected.append(path)
+    return selected
+
+
 def read_records_from_file(path: str | Path) -> list[dict[str, Any]]:
     source = Path(path)
     suffix = source.suffix.lower()
@@ -158,10 +185,17 @@ def canonicalize_training_record(record: dict[str, Any]) -> dict[str, Any] | Non
             "source_fields": sorted(record.keys()),
         }
 
+    task = _normalize_text(record.get("task"))
     prompt = _normalize_text(_first_present(record, PROMPT_FIELDS))
     response = _normalize_text(_first_present(record, RESPONSE_FIELDS))
     json_output = _normalize_text(_first_present(record, JSON_OUTPUT_FIELDS))
     text_output = _normalize_text(_first_present(record, TEXT_OUTPUT_FIELDS))
+
+    if task:
+        prompt_chunks = [f"Task:\n{task}"]
+        if prompt:
+            prompt_chunks.append(f"Input:\n{prompt}")
+        prompt = "\n\n".join(prompt_chunks).strip()
 
     if not response:
         chunks = []
@@ -184,13 +218,14 @@ def canonicalize_training_record(record: dict[str, Any]) -> dict[str, Any] | Non
     }
 
 
-def load_training_records_from_zip(zip_path: str | Path, extract_dir: str | Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    extracted = unzip_to_dir(zip_path, extract_dir)
+def load_training_records_from_dir(source_dir: str | Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    source_dir = Path(source_dir)
     records: list[dict[str, Any]] = []
     file_summaries: list[dict[str, Any]] = []
     skipped = 0
+    selected_files = select_training_files(source_dir)
 
-    for file_path in list_data_files(extracted):
+    for file_path in selected_files:
         raw_records = read_records_from_file(file_path)
         accepted = 0
         for raw_record in raw_records:
@@ -202,19 +237,31 @@ def load_training_records_from_zip(zip_path: str | Path, extract_dir: str | Path
             accepted += 1
         file_summaries.append(
             {
-                "file": str(file_path.relative_to(extracted)),
+                "file": str(file_path.relative_to(source_dir)),
                 "rows_read": len(raw_records),
                 "rows_accepted": accepted,
             }
         )
 
     profile = {
-        "zip_path": str(Path(zip_path).resolve()),
-        "extract_dir": str(extracted.resolve()),
+        "source_dir": str(source_dir.resolve()),
         "record_count": len(records),
         "skipped_records": skipped,
+        "selected_files": [str(path.relative_to(source_dir)) for path in selected_files],
         "files": file_summaries,
     }
+    return records, profile
+
+
+def load_training_records_from_zip(zip_path: str | Path, extract_dir: str | Path) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    extracted = unzip_to_dir(zip_path, extract_dir)
+    records, profile = load_training_records_from_dir(extracted)
+    profile.update(
+        {
+            "zip_path": str(Path(zip_path).resolve()),
+            "extract_dir": str(extracted.resolve()),
+        }
+    )
     return records, profile
 
 
