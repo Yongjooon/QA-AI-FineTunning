@@ -8,7 +8,7 @@ from typing import Any
 
 import torch
 from peft import PeftModel
-from transformers import AutoModelForImageTextToText, AutoProcessor, BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoProcessor, BitsAndBytesConfig
 
 from qafinetune.io_utils import build_generation_prompt_from_zip, extract_tagged_sections
 from qafinetune.runtime import detect_runtime, ensure_dir, save_json, setup_logging, utc_timestamp
@@ -96,7 +96,7 @@ def load_base_and_adapter(
         load_kwargs["low_cpu_mem_usage"] = True
         load_kwargs["offload_folder"] = str(offload_dir)
 
-    base_model = AutoModelForImageTextToText.from_pretrained(model_name, **load_kwargs)
+    base_model = AutoModelForCausalLM.from_pretrained(model_name, **load_kwargs)
     model = PeftModel.from_pretrained(base_model, adapter_path)
     model.eval()
     return model, processor, text_backend

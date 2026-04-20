@@ -11,7 +11,7 @@ import torch
 from datasets import Dataset
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from transformers import (
-    AutoModelForImageTextToText,
+    AutoModelForCausalLM,
     AutoProcessor,
     BitsAndBytesConfig,
     DataCollatorForLanguageModeling,
@@ -221,7 +221,7 @@ def load_model_and_processor(model_name: str, bf16: bool, runtime_profile: dict[
         load_kwargs["low_cpu_mem_usage"] = True
         load_kwargs["offload_folder"] = str(offload_dir)
 
-    model = AutoModelForImageTextToText.from_pretrained(model_name, **load_kwargs)
+    model = AutoModelForCausalLM.from_pretrained(model_name, **load_kwargs)
     model.config.use_cache = False
     model.gradient_checkpointing_enable()
     model = prepare_model_for_kbit_training(model)
