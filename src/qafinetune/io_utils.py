@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+import shutil
 import zipfile
 from pathlib import Path
 from typing import Any
@@ -52,6 +53,8 @@ MESSAGE_FIELDS = ["messages", "conversation", "chat", "dialogue", "dialogs"]
 def unzip_to_dir(zip_path: str | Path, output_dir: str | Path) -> Path:
     zip_path = Path(zip_path)
     output_dir = Path(output_dir)
+    if output_dir.exists():
+        shutil.rmtree(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(zip_path) as archive:
         archive.extractall(output_dir)
@@ -221,7 +224,7 @@ def build_generation_prompt_from_zip(zip_path: str | Path, extract_dir: str | Pa
     files_summary: list[dict[str, Any]] = []
 
     for file_path in list_data_files(extracted):
-        content = file_path.read_text(encoding="utf-8", errors="ignore")
+        content = render_file_for_generation_prompt(file_path)
         clipped = content[:max_chars_per_file]
         rel_path = str(file_path.relative_to(extracted))
         sections.append(f"## File: {rel_path}\n{clipped}")
@@ -259,6 +262,24 @@ def build_generation_prompt_from_zip(zip_path: str | Path, extract_dir: str | Pa
         "files": files_summary,
     }
     return prompt, profile
+
+
+def render_file_for_generation_prompt(path: str | Path) -> str:
+    source = Path(path)
+    suffix = source.suffix.lower()
+
+    if suffix in {".txt", ".md"}:
+        return source.read_text(encoding="utf-8", errors="ignore")
+
+    records = read_records_from_file(source)
+    if not records:
+        return ""
+
+    rendered_rows: list[str] = []
+    for index, record in enumerate(records, start=1):
+        rendered_rows.append(f"### Record {index}")
+        rendered_rows.append(json.dumps(record, ensure_ascii=False, indent=2))
+    return "\n\n".join(rendered_rows)
 
 
 def find_latest_checkpoint(checkpoints_dir: str | Path) -> Path | None:

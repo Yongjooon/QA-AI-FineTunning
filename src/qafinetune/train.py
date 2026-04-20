@@ -231,6 +231,10 @@ def resolve_resume_checkpoint(args: argparse.Namespace, run_paths: RunPaths) -> 
 
 def main() -> None:
     args = parse_args()
+    train_zip_path = Path(args.train_zip)
+    if not train_zip_path.exists():
+        raise FileNotFoundError(f"Training zip was not found: {train_zip_path}")
+
     run_paths = resolve_run_paths(args.output_root, args.run_name)
     logger = setup_logging(run_paths.logs_dir / "train.log")
     previous_state = load_json(run_paths.run_state_path) or {}
@@ -318,7 +322,7 @@ def main() -> None:
         "checkpoints_dir": str(run_paths.checkpoints_dir),
         "final_model_dir": str(run_paths.final_model_dir),
         "model_name": args.model_name,
-        "train_zip": str(Path(args.train_zip).resolve()),
+        "train_zip": str(train_zip_path.resolve()),
         "resume_mode": args.resume_mode,
         "resume_checkpoint": resume_checkpoint,
         "max_seq_length": args.max_seq_length,

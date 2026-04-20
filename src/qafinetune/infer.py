@@ -101,6 +101,10 @@ def safe_parse_json(text: str) -> Any:
 
 def main() -> None:
     args = parse_args()
+    input_zip_path = Path(args.input_zip)
+    if not input_zip_path.exists():
+        raise FileNotFoundError(f"Input zip was not found: {input_zip_path}")
+
     output_paths = resolve_output_paths(args.output_root, args.run_name)
     logger = setup_logging(output_paths["logs_dir"] / "generate.log")
 
@@ -184,7 +188,7 @@ def main() -> None:
         {
             "model_name": args.model_name,
             "adapter_path": str(Path(args.adapter_path).resolve()),
-            "input_zip": str(Path(args.input_zip).resolve()),
+            "input_zip": str(input_zip_path.resolve()),
             "run_dir": str(output_paths["run_dir"].resolve()),
             "max_new_tokens": args.max_new_tokens,
             "temperature": args.temperature,
