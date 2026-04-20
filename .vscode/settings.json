@@ -1,0 +1,13 @@
+{
+  "colab.logging.level": "info",
+  "colab.uploading": true,
+  "colab.activityBarContentView": true,
+  "colab.activityBarResourceView": true,
+  "colab.serverMounting": true,
+  "colab.terminal": true,
+  "colab.importNotebookFromUrl": true,
+  "jupyter.askForKernelRestart": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right"
+  }
+}
