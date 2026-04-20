@@ -1,0 +1,42 @@
+%%{init: {'theme': 'dark', 'flowchart': {'curve': 'basis', 'diagramPadding': 20}}}%%
+%% Crawl Traversal Graph
+%% jobId       : 2026-04-17T09-38-00-6751880b
+%% originUrl   : https://www.daum.net/
+%% generated   : 2026-04-17T09:39:17.017Z
+%%
+%% NODE STATUS LEGEND
+%%   start        — seed page (pink ellipse)
+%%   analyzed     — successfully crawled (green)
+%%   queued       — discovered but not visited (blue)
+%%   auth_gated   — login / auth-provider page (orange diamond)
+%%   failed       — error during crawl (red)
+%%   out_of_scope — redirect left rootHost scope (gray)
+%%   duplicate    — seen in prior run, skipped (dark gray)
+%%
+%% EDGE LEGEND
+%%   -->    content link
+%%   ==>    trigger navigation  (thick arrow)
+%%   -.->   auth gate           (dashed)
+%%   %% [boilerplate]  boilerplate nav edge (commented out, not rendered)
+%%
+%% STATS: nodes=1 analyzed=1 queued=0 auth=0 failed=0 edges=0 meaningful=0 boilerplate=0
+%%
+flowchart LR
+
+  classDef start        fill:#FF6B9D,color:#fff,stroke:#c0392b,stroke-width:3px
+  classDef analyzed     fill:#2ecc71,color:#fff,stroke:#27ae60
+  classDef failed       fill:#e74c3c,color:#fff,stroke:#c0392b
+  classDef auth_gated   fill:#FFB347,color:#333,stroke:#e67e22
+  classDef queued       fill:#3498db,color:#fff,stroke:#2980b9
+  classDef out_of_scope fill:#95a5a6,color:#fff,stroke:#7f8c8d
+  classDef duplicate    fill:#7f8c8d,color:#fff,stroke:#636e72
+  classDef unknown      fill:#f39c12,color:#333,stroke:#e67e22
+
+  subgraph d0["📄 Depth 0 — Start"]
+  n_www_daum_net_(["/<br/><small>start · d0</small>"])
+  end
+
+  %% ── Edges ──────────────────────────────────
+
+  %% ── Class assignments ──────────────────────
+  class n_www_daum_net_ start

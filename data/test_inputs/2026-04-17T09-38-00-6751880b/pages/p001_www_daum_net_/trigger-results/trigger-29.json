@@ -1,0 +1,296 @@
+{
+  "triggerId": "trigger-29",
+  "action": "click",
+  "status": "success",
+  "screenshotMode": "changedRegion",
+  "beforeScreenshot": null,
+  "afterScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-29-after.png",
+  "annotatedScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-29-annotated.png",
+  "diffDebug": "outputs/p001_www_daum_net_/trigger-results/trigger-29-diff-debug.json",
+  "mutationCount": 27,
+  "mutations": [
+    {
+      "type": "attributes",
+      "targetTag": "button",
+      "targetId": null,
+      "targetClass": "btn_help",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-expanded",
+      "oldValue": null
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "rolling"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: block;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(0px, 0px, 0px);"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-active"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-active",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-active",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-next swiper-slide-active"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "0"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "0"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-hidden",
+      "oldValue": "false"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "-1"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont type_board",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "-1"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-active",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-hidden",
+      "oldValue": "true"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(-350px, 0px, 0px); transition-duration: 300ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(-350px, 0px, 0px); transition-duration: 0ms;"
+    }
+  ],
+  "newNodes": [],
+  "newlyVisibleNodes": [],
+  "changedNodes": [],
+  "deltaLabelNodes": [],
+  "unchangedNodesCount": 776,
+  "deltaLabelNodesCount": 0,
+  "backgroundNoiseCount": 34,
+  "newRegions": [],
+  "summary": "Detected 27 mutation(s).",
+  "startedAt": "2026-04-17T09:38:40.494Z",
+  "finishedAt": "2026-04-17T09:38:48.535Z",
+  "durationMs": 8041,
+  "workerSlot": 1
+}

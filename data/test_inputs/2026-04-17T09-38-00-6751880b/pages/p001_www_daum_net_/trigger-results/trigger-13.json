@@ -1,0 +1,490 @@
+{
+  "triggerId": "trigger-13",
+  "action": "click",
+  "status": "success",
+  "screenshotMode": "changedRegion",
+  "beforeScreenshot": null,
+  "afterScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-13-after.png",
+  "annotatedScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-13-annotated.png",
+  "diffDebug": "outputs/p001_www_daum_net_/trigger-results/trigger-13-diff-debug.json",
+  "mutationCount": 45,
+  "mutations": [
+    {
+      "type": "attributes",
+      "targetTag": "button",
+      "targetId": null,
+      "targetClass": "btn_help",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-expanded",
+      "oldValue": null
+    },
+    {
+      "type": "attributes",
+      "targetTag": "video",
+      "targetId": "video-ece9a6bf7wm",
+      "targetClass": "",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "autoplay",
+      "oldValue": null
+    },
+    {
+      "type": "attributes",
+      "targetTag": "video",
+      "targetId": "video-9axtckbdnq",
+      "targetClass": "",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "autoplay",
+      "oldValue": null
+    },
+    {
+      "type": "attributes",
+      "targetTag": "span",
+      "targetId": null,
+      "targetClass": "",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "position: relative; z-index: 1; display: block; transition: opacity 200ms; opacity: 0;"
+    },
+    {
+      "type": "childList",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [
+        {
+          "tag": "div",
+          "id": null,
+          "classes": "swiper-slide item_thumb swiper-slide-active",
+          "text": "분석 19:00  KBL  부산 KCC - 점 원주 DB - 점문자 1회초  KBO  키움 0 점 KT 0 점"
+        }
+      ],
+      "attributeName": null,
+      "oldValue": null
+    },
+    {
+      "type": "childList",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [
+        {
+          "tag": "div",
+          "id": null,
+          "classes": "swiper-slide item_thumb swiper-slide-active",
+          "text": "분석 19:00  KBL  부산 KCC - 점 원주 DB - 점문자 1회초  KBO  키움 0 점 KT 0 점"
+        }
+      ],
+      "removedNodes": [],
+      "attributeName": null,
+      "oldValue": null
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(-350px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-active",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(0px, 0px, 0px); transition-duration: 300ms; transition-delay: 0ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-active"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-active",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-active",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-next swiper-slide-active"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "-1"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "-1"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-active",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-hidden",
+      "oldValue": "true"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "0"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont type_board",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "0"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-hidden",
+      "oldValue": "false"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "span",
+      "targetId": null,
+      "targetClass": "",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "position: relative; z-index: 1; display: block; transition: opacity 200ms; opacity: 1;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(-350px, 0px, 0px); transition-duration: 300ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(-350px, 0px, 0px); transition-duration: 0ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "rolling rolling_end"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "rolling"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: block;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    }
+  ],
+  "newNodes": [],
+  "newlyVisibleNodes": [],
+  "changedNodes": [],
+  "deltaLabelNodes": [],
+  "unchangedNodesCount": 788,
+  "deltaLabelNodesCount": 0,
+  "backgroundNoiseCount": 21,
+  "newRegions": [],
+  "summary": "Detected 45 mutation(s).",
+  "startedAt": "2026-04-17T09:38:27.445Z",
+  "finishedAt": "2026-04-17T09:38:45.079Z",
+  "durationMs": 17634,
+  "workerSlot": 0
+}

@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "startedAt": "2026-04-17T09:38:07.572Z",
+  "blockerCount": 0,
+  "blockingElements": [],
+  "actions": [
+    {
+      "stage": 3,
+      "type": "pause_media",
+      "count": 1,
+      "succeeded": true
+    }
+  ],
+  "dismissedCount": 0,
+  "hiddenCount": 0,
+  "pausedMediaCount": 1,
+  "stabilizationSucceeded": true,
+  "partiallyBlocked": false,
+  "warnings": [],
+  "finishedAt": "2026-04-17T09:38:07.606Z"
+}

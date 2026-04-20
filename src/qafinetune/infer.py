@@ -10,7 +10,7 @@ import torch
 from peft import PeftModel
 from transformers import AutoModelForCausalLM, AutoProcessor, BitsAndBytesConfig
 
-from qafinetune.io_utils import build_generation_prompt_from_zip, extract_tagged_sections
+from qafinetune.io_utils import build_generation_prompt_from_dir, build_generation_prompt_from_zip, extract_tagged_sections
 from qafinetune.runtime import detect_runtime, ensure_dir, save_json, setup_logging, utc_timestamp
 
 
@@ -18,7 +18,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate QA scenarios from a fine-tuned Gemma 4 model.")
     parser.add_argument("--model_name", required=True)
     parser.add_argument("--adapter_path", required=True)
-    parser.add_argument("--input_zip", required=True)
+    parser.add_argument("--input_source", "--input_zip", dest="input_source", required=True)
     parser.add_argument("--output_root", required=True)
     parser.add_argument("--run_name", default="")
     parser.add_argument("--max_new_tokens", type=int, default=1800)
@@ -122,9 +122,9 @@ def safe_parse_json(text: str) -> Any:
 
 def main() -> None:
     args = parse_args()
-    input_zip_path = Path(args.input_zip)
-    if not input_zip_path.exists():
-        raise FileNotFoundError(f"Input zip was not found: {input_zip_path}")
+    input_source_path = Path(args.input_source)
+    if not input_source_path.exists():
+        raise FileNotFoundError(f"Input source was not found: {input_source_path}")
 
     output_paths = resolve_output_paths(args.output_root, args.run_name)
     logger = setup_logging(output_paths["logs_dir"] / "generate.log")
@@ -134,7 +134,10 @@ def main() -> None:
         raise RuntimeError("CUDA GPU was not detected. Use a GPU-backed Colab runtime.")
     save_json(output_paths["runtime_profile_path"], runtime_profile)
 
-    prompt, input_profile = build_generation_prompt_from_zip(args.input_zip, output_paths["extract_dir"])
+    if input_source_path.is_dir():
+        prompt, input_profile = build_generation_prompt_from_dir(input_source_path)
+    else:
+        prompt, input_profile = build_generation_prompt_from_zip(input_source_path, output_paths["extract_dir"])
     save_json(output_paths["input_profile_path"], input_profile)
 
     model, processor, text_backend = load_base_and_adapter(
@@ -210,7 +213,7 @@ def main() -> None:
         {
             "model_name": args.model_name,
             "adapter_path": str(Path(args.adapter_path).resolve()),
-            "input_zip": str(input_zip_path.resolve()),
+            "input_source": str(input_source_path.resolve()),
             "run_dir": str(output_paths["run_dir"].resolve()),
             "max_new_tokens": args.max_new_tokens,
             "temperature": args.temperature,

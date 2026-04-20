@@ -1,0 +1,132 @@
+{
+  "generatedAt": "2026-04-17T09:38:10.258Z",
+  "note": "Each category key maps to its annotation color, short code, and count of detected elements.",
+  "categories": {
+    "login": {
+      "code": "AUTH",
+      "color": "#DD6B20",
+      "label": "Login / Auth",
+      "count": 6,
+      "description": "Login/logout, sign-in/up buttons, username/password fields, social auth controls. Detected via text keywords (로그인, login, sign in), href patterns, class/id, and input type=password."
+    },
+    "search": {
+      "code": "SRCH",
+      "color": "#805AD5",
+      "label": "Search",
+      "count": 1,
+      "description": "Search input boxes, search submit buttons, and search-scoped form areas."
+    },
+    "tab": {
+      "code": "TAB",
+      "color": "#ED64A6",
+      "label": "Tab / Accordion",
+      "count": 38,
+      "description": "Tab bars, tab panels, accordion headers, and expandable/collapsible sections."
+    },
+    "button": {
+      "code": "BTN",
+      "color": "#E53E3E",
+      "label": "Button",
+      "count": 34,
+      "description": "Clickable buttons (non-login, non-search) — <button>, input[type=submit|button|reset], role=button."
+    },
+    "card": {
+      "code": "CARD",
+      "color": "#6B4B2E",
+      "label": "Card / List Item",
+      "count": 119,
+      "description": "Repeated card or list-item containers — product cards, article tiles, result entries."
+    },
+    "input": {
+      "code": "INP",
+      "color": "#38A169",
+      "label": "Input Field",
+      "count": 1,
+      "description": "Generic text/email/date/number/textarea inputs not classified as search or login."
+    },
+    "link": {
+      "code": "LINK",
+      "color": "#0BC5EA",
+      "label": "Link",
+      "count": 137,
+      "description": "Anchor links not clearly acting as nav menu items or auth controls."
+    },
+    "heading": {
+      "code": "HDG",
+      "color": "#2D3748",
+      "label": "Heading / Text",
+      "count": 9,
+      "description": "h1–h6 headings and elements with role=heading."
+    },
+    "media": {
+      "code": "IMG",
+      "color": "#276749",
+      "label": "Image / Media",
+      "count": 86,
+      "description": "Images, video elements, <canvas>, <svg>, <iframe>, and other media containers."
+    },
+    "layout": {
+      "code": "LYT",
+      "color": "#553C9A",
+      "label": "Header / Footer",
+      "count": 37,
+      "description": "Major layout regions — site header, footer, sidebars, <main>, <section>, <article>."
+    },
+    "unknown": {
+      "code": "?",
+      "color": "#718096",
+      "label": "Unknown",
+      "count": 338,
+      "description": "Could not be classified by any heuristic rule."
+    },
+    "modal": {
+      "code": "MODAL",
+      "color": "#C05621",
+      "label": "Modal / Dialog",
+      "count": 0,
+      "description": "Dialogs, overlays, popups, lightboxes, and other content that blocks page interaction."
+    },
+    "form": {
+      "code": "FORM",
+      "color": "#319795",
+      "label": "Form",
+      "count": 0,
+      "description": "Top-level form containers grouping inputs and submit actions."
+    },
+    "dropdown": {
+      "code": "DROP",
+      "color": "#D69E2E",
+      "label": "Dropdown / Select",
+      "count": 0,
+      "description": "<select> elements, ARIA comboboxes, listboxes, and dropdown menus."
+    },
+    "checkbox": {
+      "code": "CHK",
+      "color": "#85A20E",
+      "label": "Checkbox / Radio",
+      "count": 0,
+      "description": "Checkbox inputs, radio buttons, toggle switches, and ARIA switch controls."
+    },
+    "nav": {
+      "code": "NAV",
+      "color": "#3182CE",
+      "label": "Navigation / Menu",
+      "count": 0,
+      "description": "Navigation bars, site menus, breadcrumbs, hamburger menus, and sidebar navigation."
+    },
+    "pagination": {
+      "code": "PAGE",
+      "color": "#2A4365",
+      "label": "Pagination",
+      "count": 0,
+      "description": "Page number links, next/previous controls, and pagination containers."
+    },
+    "banner": {
+      "code": "BNR",
+      "color": "#718096",
+      "label": "Banner / Ad",
+      "count": 0,
+      "description": "Promotional banners, advertisement containers, sponsor ribbons, and ad slots."
+    }
+  }
+}

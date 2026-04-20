@@ -1,0 +1,56 @@
+{
+  "triggerId": "trigger-41",
+  "action": "click",
+  "status": "success",
+  "screenshotMode": "changedRegion",
+  "beforeScreenshot": null,
+  "afterScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-41-after.png",
+  "annotatedScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-41-annotated.png",
+  "diffDebug": "outputs/p001_www_daum_net_/trigger-results/trigger-41-diff-debug.json",
+  "mutationCount": 3,
+  "mutations": [
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(-350px, 0px, 0px); transition-duration: 300ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(-350px, 0px, 0px); transition-duration: 0ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "button",
+      "targetId": null,
+      "targetClass": "btn_help",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-expanded",
+      "oldValue": null
+    }
+  ],
+  "newNodes": [],
+  "newlyVisibleNodes": [],
+  "changedNodes": [],
+  "deltaLabelNodes": [],
+  "unchangedNodesCount": 788,
+  "deltaLabelNodesCount": 0,
+  "backgroundNoiseCount": 18,
+  "newRegions": [],
+  "summary": "Detected 3 mutation(s).",
+  "startedAt": "2026-04-17T09:38:54.696Z",
+  "finishedAt": "2026-04-17T09:39:04.361Z",
+  "durationMs": 9665,
+  "workerSlot": 3
+}

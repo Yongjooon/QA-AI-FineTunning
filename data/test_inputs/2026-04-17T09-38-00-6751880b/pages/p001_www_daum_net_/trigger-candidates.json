@@ -1,0 +1,376 @@
+[
+  {
+    "triggerId": "trigger-3",
+    "triggerType": "click",
+    "text": "홈 화면 설정",
+    "role": null,
+    "id": "pagSetting",
+    "selectorHint": "#pagSetting",
+    "bbox": {
+      "x": 1852,
+      "y": 1012,
+      "width": 44,
+      "height": 44
+    },
+    "priority": 10,
+    "reason": "has aria-expanded",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-1",
+    "triggerType": "click",
+    "text": "전체 서비스 전체 서비스",
+    "role": "button",
+    "id": "gnbTitle",
+    "selectorHint": "#gnbTitle",
+    "bbox": {
+      "x": 1040,
+      "y": 144,
+      "width": 44,
+      "height": 44
+    },
+    "priority": 8,
+    "reason": "has aria-expanded",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-4",
+    "triggerType": "click",
+    "text": "입력 도구",
+    "role": null,
+    "id": "VKIBtn",
+    "selectorHint": "#VKIBtn",
+    "bbox": {
+      "x": 1162,
+      "y": 48,
+      "width": 40,
+      "height": 56
+    },
+    "priority": 4,
+    "reason": "button element",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-5",
+    "triggerType": "click",
+    "text": "검색",
+    "role": null,
+    "id": null,
+    "selectorHint": "button.btn_ksearch",
+    "bbox": {
+      "x": 1202,
+      "y": 48,
+      "width": 48,
+      "height": 56
+    },
+    "priority": 4,
+    "reason": "button element",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-6",
+    "triggerType": "click",
+    "text": "실시간 트렌드 펼치기",
+    "role": null,
+    "id": null,
+    "selectorHint": "button.btn_fold",
+    "bbox": {
+      "x": 1518,
+      "y": 149,
+      "width": 34,
+      "height": 34
+    },
+    "priority": 4,
+    "reason": "button element",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-8",
+    "triggerType": "click",
+    "text": "뉴스",
+    "role": "button",
+    "id": null,
+    "selectorHint": "a.link_tit",
+    "bbox": {
+      "x": 390,
+      "y": 560,
+      "width": 129,
+      "height": 56
+    },
+    "priority": 4,
+    "reason": "role=button",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-12",
+    "triggerType": "click",
+    "text": "이전페이지 보기",
+    "role": "button",
+    "id": null,
+    "selectorHint": "a.link_prev",
+    "bbox": {
+      "x": 625,
+      "y": 1699,
+      "width": 38,
+      "height": 38
+    },
+    "priority": 4,
+    "reason": "role=button",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-13",
+    "triggerType": "click",
+    "text": "다음페이지 보기",
+    "role": "button",
+    "id": null,
+    "selectorHint": "a.link_next",
+    "bbox": {
+      "x": 857,
+      "y": 1699,
+      "width": 38,
+      "height": 38
+    },
+    "priority": 4,
+    "reason": "role=button",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-17",
+    "triggerType": "click",
+    "text": "스포츠 홈",
+    "role": "button",
+    "id": null,
+    "selectorHint": "a.btn_extend",
+    "bbox": {
+      "x": 1035,
+      "y": 2238,
+      "width": 85,
+      "height": 34
+    },
+    "priority": 4,
+    "reason": "role=button",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-29",
+    "triggerType": "click",
+    "text": "증권 펼치기",
+    "role": "button",
+    "id": null,
+    "selectorHint": "a.btn_fold",
+    "bbox": {
+      "x": 1494,
+      "y": 1755,
+      "width": 34,
+      "height": 34
+    },
+    "priority": 4,
+    "reason": "role=button",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-36",
+    "triggerType": "click",
+    "text": "주요 서비스 바로가기",
+    "role": null,
+    "id": null,
+    "selectorHint": "a",
+    "bbox": {
+      "x": 0,
+      "y": -1000,
+      "width": 130,
+      "height": 28
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-37",
+    "triggerType": "click",
+    "text": "전체 서비스 바로가기",
+    "role": null,
+    "id": null,
+    "selectorHint": "a",
+    "bbox": {
+      "x": 0,
+      "y": -1000,
+      "width": 130,
+      "height": 28
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-38",
+    "triggerType": "click",
+    "text": "홈 화면 설정 바로가기",
+    "role": null,
+    "id": null,
+    "selectorHint": "a",
+    "bbox": {
+      "x": 0,
+      "y": -1000,
+      "width": 133,
+      "height": 28
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-39",
+    "triggerType": "click",
+    "text": "로그인 & MY정보 바로가기",
+    "role": null,
+    "id": null,
+    "selectorHint": "a",
+    "bbox": {
+      "x": 0,
+      "y": -1000,
+      "width": 161,
+      "height": 28
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": true
+  },
+  {
+    "triggerId": "trigger-40",
+    "triggerType": "click",
+    "text": "뉴스 본문 바로가기",
+    "role": null,
+    "id": null,
+    "selectorHint": "a",
+    "bbox": {
+      "x": 0,
+      "y": -1000,
+      "width": 118,
+      "height": 28
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-41",
+    "triggerType": "click",
+    "text": "연예 본문 바로가기",
+    "role": null,
+    "id": null,
+    "selectorHint": "a",
+    "bbox": {
+      "x": 0,
+      "y": -1000,
+      "width": 118,
+      "height": 28
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-42",
+    "triggerType": "click",
+    "text": "스포츠 본문 바로가기",
+    "role": null,
+    "id": null,
+    "selectorHint": "a",
+    "bbox": {
+      "x": 0,
+      "y": -1000,
+      "width": 130,
+      "height": 28
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-43",
+    "triggerType": "click",
+    "text": "카페・스토리 본문 바로가기",
+    "role": null,
+    "id": null,
+    "selectorHint": "a",
+    "bbox": {
+      "x": 0,
+      "y": -1000,
+      "width": 164,
+      "height": 28
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-44",
+    "triggerType": "click",
+    "text": "관심사 본문 바로가기",
+    "role": null,
+    "id": null,
+    "selectorHint": "a",
+    "bbox": {
+      "x": 0,
+      "y": -1000,
+      "width": 130,
+      "height": 28
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-45",
+    "triggerType": "click",
+    "text": "쇼핑 본문 바로가기",
+    "role": null,
+    "id": null,
+    "selectorHint": "a",
+    "bbox": {
+      "x": 0,
+      "y": -1000,
+      "width": 118,
+      "height": 28
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-71",
+    "triggerType": "click",
+    "text": "쇼핑",
+    "role": "tab",
+    "id": null,
+    "selectorHint": "a.link_item",
+    "bbox": {
+      "x": 1174,
+      "y": 762,
+      "width": 57,
+      "height": 36
+    },
+    "priority": 3,
+    "reason": "anchor link",
+    "authSensitiveHint": false
+  },
+  {
+    "triggerId": "trigger-76",
+    "triggerType": "hover",
+    "text": "",
+    "role": null,
+    "id": "div-nam-PW_Daum_Top_Brandingstation-N239657548_tgtLREC",
+    "selectorHint": "#div-nam-PW_Daum_Top_Brandingstation-N239657548_tgtLREC",
+    "bbox": {
+      "x": 1202,
+      "y": 370,
+      "width": 300,
+      "height": 250
+    },
+    "priority": 1,
+    "reason": "tabindex >= 0",
+    "authSensitiveHint": false
+  }
+]

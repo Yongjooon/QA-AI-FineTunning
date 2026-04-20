@@ -1,0 +1,36 @@
+{
+  "triggerId": "trigger-5",
+  "action": "click",
+  "status": "navigated_to_unknown",
+  "screenshotMode": "changedRegion",
+  "beforeScreenshot": null,
+  "afterScreenshot": null,
+  "annotatedScreenshot": null,
+  "mutationCount": 0,
+  "mutations": [],
+  "newNodes": [],
+  "backgroundNoiseCount": 0,
+  "newRegions": [],
+  "navigationDetected": true,
+  "navigatedToUrl": "https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&q=",
+  "navigatedToHost": "search.daum.net",
+  "navigatedToPath": "/search",
+  "authDetected": false,
+  "requiresAuth": true,
+  "authScore": 3,
+  "authConfidence": "medium",
+  "authSignals": [
+    "text_hint:로그인",
+    "cross_host_redirect"
+  ],
+  "navigationReason": "trigger navigated outside content scope — insufficient evidence to classify as authentication",
+  "classificationSource": [
+    "auth_text_heuristic",
+    "cross_host_redirect"
+  ],
+  "summary": "trigger navigated outside content scope — insufficient evidence to classify as authentication",
+  "startedAt": "2026-04-17T09:38:15.418Z",
+  "finishedAt": "2026-04-17T09:38:26.432Z",
+  "durationMs": 11014,
+  "workerSlot": 3
+}

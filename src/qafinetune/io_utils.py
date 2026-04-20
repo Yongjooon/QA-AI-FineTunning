@@ -267,6 +267,15 @@ def load_training_records_from_zip(zip_path: str | Path, extract_dir: str | Path
 
 def build_generation_prompt_from_zip(zip_path: str | Path, extract_dir: str | Path, max_chars_per_file: int = 12000) -> tuple[str, dict[str, Any]]:
     extracted = unzip_to_dir(zip_path, extract_dir)
+    return build_generation_prompt_from_dir(extracted, max_chars_per_file=max_chars_per_file, source_zip_path=zip_path)
+
+
+def build_generation_prompt_from_dir(
+    source_dir: str | Path,
+    max_chars_per_file: int = 12000,
+    source_zip_path: str | Path | None = None,
+) -> tuple[str, dict[str, Any]]:
+    extracted = Path(source_dir)
     sections: list[str] = []
     files_summary: list[dict[str, Any]] = []
 
@@ -304,10 +313,12 @@ def build_generation_prompt_from_zip(zip_path: str | Path, extract_dir: str | Pa
     )
 
     profile = {
-        "zip_path": str(Path(zip_path).resolve()),
-        "extract_dir": str(extracted.resolve()),
+        "source_dir": str(extracted.resolve()),
         "files": files_summary,
     }
+    if source_zip_path is not None:
+        profile["zip_path"] = str(Path(source_zip_path).resolve())
+        profile["extract_dir"] = str(extracted.resolve())
     return prompt, profile
 
 

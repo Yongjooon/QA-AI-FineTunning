@@ -1,0 +1,2362 @@
+{
+  "triggerId": "trigger-3",
+  "action": "click",
+  "status": "success",
+  "screenshotMode": "changedRegion",
+  "beforeScreenshot": null,
+  "afterScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-3-after.png",
+  "annotatedScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-3-annotated.png",
+  "diffDebug": "outputs/p001_www_daum_net_/trigger-results/trigger-3-diff-debug.json",
+  "mutationCount": 7,
+  "mutations": [
+    {
+      "type": "attributes",
+      "targetTag": "button",
+      "targetId": null,
+      "targetClass": "btn_help",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-expanded",
+      "oldValue": null
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "pagSetting",
+      "targetClass": "btn_setting",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-expanded",
+      "oldValue": "false"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "layer_setting open",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "layer_setting"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "rolling rolling_end"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "rolling"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: block;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    }
+  ],
+  "newNodes": [
+    {
+      "nodeId": "node-1406",
+      "tagName": "strong",
+      "text": "화면 배율",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 689,
+        "width": 313,
+        "height": 50
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "has_text"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1407",
+      "tagName": "ul",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "list_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 739,
+        "width": 313,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "ul.list_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "sem_structural"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1408",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_size1"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_size1",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1409",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1412",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_size2"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1670,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_size2",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1413",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1670,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1416",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_size3"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_size3",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 0,
+      "focusReasons": [],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1417",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1419",
+      "tagName": "p",
+      "text": "더 크게",
+      "role": null,
+      "id": null,
+      "classList": [
+        "txt_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 797,
+        "width": 104,
+        "height": 24
+      },
+      "isVisible": true,
+      "selectorHint": "p.txt_setting",
+      "group": "section",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "has_text",
+        "pointer_cursor",
+        "empty_container"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -2,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-2 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1421",
+      "tagName": "strong",
+      "text": "화면 스타일",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 848,
+        "width": 313,
+        "height": 50
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "has_text"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1422",
+      "tagName": "ul",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "list_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 898,
+        "width": 313,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "ul.list_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "sem_structural"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1423",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_light"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_light",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1424",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1426",
+      "tagName": "p",
+      "text": "라이트 모드",
+      "role": null,
+      "id": null,
+      "classList": [
+        "txt_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 956,
+        "width": 104,
+        "height": 24
+      },
+      "isVisible": true,
+      "selectorHint": "p.txt_setting",
+      "group": "section",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "has_text",
+        "pointer_cursor",
+        "empty_container"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -2,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-2 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1427",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_dark"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1670,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_dark",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1428",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1670,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1430",
+      "tagName": "p",
+      "text": "다크 모드",
+      "role": null,
+      "id": null,
+      "classList": [
+        "txt_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1670,
+        "y": 956,
+        "width": 104,
+        "height": 24
+      },
+      "isVisible": true,
+      "selectorHint": "p.txt_setting",
+      "group": "section",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "has_text",
+        "pointer_cursor",
+        "empty_container"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -2,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-2 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1431",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_system"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_system",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 0,
+      "focusReasons": [],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1432",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1434",
+      "tagName": "p",
+      "text": "기기 설정",
+      "role": null,
+      "id": null,
+      "classList": [
+        "txt_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 956,
+        "width": 104,
+        "height": 24
+      },
+      "isVisible": true,
+      "selectorHint": "p.txt_setting",
+      "group": "section",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "has_text",
+        "pointer_cursor",
+        "empty_container"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -2,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-2 < threshold=2 (mode=dense)"
+    }
+  ],
+  "newlyVisibleNodes": [],
+  "changedNodes": [
+    {
+      "nodeId": "node-1400",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": "pagSetting",
+      "classList": [
+        "btn_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1852,
+        "y": 1012,
+        "width": 44,
+        "height": 44
+      },
+      "isVisible": true,
+      "selectorHint": "#pagSetting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    }
+  ],
+  "deltaLabelNodes": [
+    {
+      "nodeId": "node-1406",
+      "tagName": "strong",
+      "text": "화면 배율",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 689,
+        "width": 313,
+        "height": 50
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "has_text"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1407",
+      "tagName": "ul",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "list_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 739,
+        "width": 313,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "ul.list_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "sem_structural"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1408",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_size1"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_size1",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1409",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1412",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_size2"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1670,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_size2",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1413",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1670,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1416",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_size3"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_size3",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 0,
+      "focusReasons": [],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1417",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 739,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1419",
+      "tagName": "p",
+      "text": "더 크게",
+      "role": null,
+      "id": null,
+      "classList": [
+        "txt_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 797,
+        "width": 104,
+        "height": 24
+      },
+      "isVisible": true,
+      "selectorHint": "p.txt_setting",
+      "group": "section",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "has_text",
+        "pointer_cursor",
+        "empty_container"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -2,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-2 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1421",
+      "tagName": "strong",
+      "text": "화면 스타일",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 848,
+        "width": 313,
+        "height": 50
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "has_text"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1422",
+      "tagName": "ul",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "list_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 898,
+        "width": 313,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "ul.list_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "sem_structural"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1423",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_light"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_light",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1424",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1426",
+      "tagName": "p",
+      "text": "라이트 모드",
+      "role": null,
+      "id": null,
+      "classList": [
+        "txt_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1566,
+        "y": 956,
+        "width": 104,
+        "height": 24
+      },
+      "isVisible": true,
+      "selectorHint": "p.txt_setting",
+      "group": "section",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "has_text",
+        "pointer_cursor",
+        "empty_container"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -2,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-2 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1427",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_dark"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1670,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_dark",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1428",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1670,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1430",
+      "tagName": "p",
+      "text": "다크 모드",
+      "role": null,
+      "id": null,
+      "classList": [
+        "txt_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1670,
+        "y": 956,
+        "width": 104,
+        "height": 24
+      },
+      "isVisible": true,
+      "selectorHint": "p.txt_setting",
+      "group": "section",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "has_text",
+        "pointer_cursor",
+        "empty_container"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -2,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-2 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1431",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "item_system"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "li.item_system",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 0,
+      "focusReasons": [],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1432",
+      "tagName": "a",
+      "text": "",
+      "role": "button",
+      "id": null,
+      "classList": [
+        "link_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 898,
+        "width": 104,
+        "height": 91
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_setting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.9,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "role=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1434",
+      "tagName": "p",
+      "text": "기기 설정",
+      "role": null,
+      "id": null,
+      "classList": [
+        "txt_setting"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1774,
+        "y": 956,
+        "width": 104,
+        "height": 24
+      },
+      "isVisible": true,
+      "selectorHint": "p.txt_setting",
+      "group": "section",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "has_text",
+        "pointer_cursor",
+        "empty_container"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -2,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-2 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1400",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": "pagSetting",
+      "classList": [
+        "btn_setting"
+      ],
+      "href": "#none",
+      "type": null,
+      "bbox": {
+        "x": 1852,
+        "y": 1012,
+        "width": 44,
+        "height": 44
+      },
+      "isVisible": true,
+      "selectorHint": "#pagSetting",
+      "group": "section",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    }
+  ],
+  "unchangedNodesCount": 797,
+  "deltaLabelNodesCount": 21,
+  "backgroundNoiseCount": 6,
+  "newRegions": [
+    {
+      "x": 1566,
+      "y": 689,
+      "width": 313,
+      "height": 50,
+      "nodeId": "node-1406",
+      "tagName": "strong",
+      "text": "화면 배율"
+    },
+    {
+      "x": 1566,
+      "y": 739,
+      "width": 313,
+      "height": 91,
+      "nodeId": "node-1407",
+      "tagName": "ul",
+      "text": ""
+    },
+    {
+      "x": 1566,
+      "y": 739,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1408",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 1566,
+      "y": 739,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1409",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1670,
+      "y": 739,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1412",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 1670,
+      "y": 739,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1413",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1774,
+      "y": 739,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1416",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 1774,
+      "y": 739,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1417",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1774,
+      "y": 797,
+      "width": 104,
+      "height": 24,
+      "nodeId": "node-1419",
+      "tagName": "p",
+      "text": "더 크게"
+    },
+    {
+      "x": 1566,
+      "y": 848,
+      "width": 313,
+      "height": 50,
+      "nodeId": "node-1421",
+      "tagName": "strong",
+      "text": "화면 스타일"
+    },
+    {
+      "x": 1566,
+      "y": 898,
+      "width": 313,
+      "height": 91,
+      "nodeId": "node-1422",
+      "tagName": "ul",
+      "text": ""
+    },
+    {
+      "x": 1566,
+      "y": 898,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1423",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 1566,
+      "y": 898,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1424",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1566,
+      "y": 956,
+      "width": 104,
+      "height": 24,
+      "nodeId": "node-1426",
+      "tagName": "p",
+      "text": "라이트 모드"
+    },
+    {
+      "x": 1670,
+      "y": 898,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1427",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 1670,
+      "y": 898,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1428",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1670,
+      "y": 956,
+      "width": 104,
+      "height": 24,
+      "nodeId": "node-1430",
+      "tagName": "p",
+      "text": "다크 모드"
+    },
+    {
+      "x": 1774,
+      "y": 898,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1431",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 1774,
+      "y": 898,
+      "width": 104,
+      "height": 91,
+      "nodeId": "node-1432",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1774,
+      "y": 956,
+      "width": 104,
+      "height": 24,
+      "nodeId": "node-1434",
+      "tagName": "p",
+      "text": "기기 설정"
+    }
+  ],
+  "summary": "Detected 21 new node(s) and 7 mutation(s).",
+  "startedAt": "2026-04-17T09:38:15.418Z",
+  "finishedAt": "2026-04-17T09:38:27.445Z",
+  "durationMs": 12027,
+  "workerSlot": 0
+}

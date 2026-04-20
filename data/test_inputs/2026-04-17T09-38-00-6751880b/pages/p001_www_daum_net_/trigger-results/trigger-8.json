@@ -1,0 +1,2292 @@
+{
+  "triggerId": "trigger-8",
+  "action": "click",
+  "status": "success",
+  "screenshotMode": "changedRegion",
+  "beforeScreenshot": null,
+  "afterScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-8-after.png",
+  "annotatedScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-8-annotated.png",
+  "diffDebug": "outputs/p001_www_daum_net_/trigger-results/trigger-8-diff-debug.json",
+  "mutationCount": 25,
+  "mutations": [
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "rolling"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: block;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "button",
+      "targetId": null,
+      "targetClass": "btn_help",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-expanded",
+      "oldValue": null
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_prev",
+      "targetClass": "link_prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_prev"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": "scoreboard_310_next",
+      "targetClass": "link_next",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "link_next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(0px, 0px, 0px);"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(0px, 0px, 0px); transition-duration: 300ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-active"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-active",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-next"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-active",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "swiper-slide item_thumb swiper-slide-next swiper-slide-active"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "0"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "0"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-next swiper-slide-prev",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-hidden",
+      "oldValue": "false"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "-1"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "a",
+      "targetId": null,
+      "targetClass": "link_cont type_board",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "tabindex",
+      "oldValue": "-1"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-slide item_thumb swiper-slide-active",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-hidden",
+      "oldValue": "true"
+    }
+  ],
+  "newNodes": [
+    {
+      "nodeId": "node-134",
+      "tagName": "ul",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "list_sort"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 616,
+        "width": 160,
+        "height": 376
+      },
+      "isVisible": true,
+      "selectorHint": "ul.list_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_large",
+        "vis_above_fold",
+        "vis_central",
+        "sem_structural",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-135",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 624,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-136",
+      "tagName": "a",
+      "text": "뉴스홈",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 624,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 7,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 7,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-138",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 664,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-139",
+      "tagName": "a",
+      "text": "기후ㆍ환경",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/climate",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 664,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-141",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 704,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-142",
+      "tagName": "a",
+      "text": "사회",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/society#1",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 704,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-144",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 744,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-145",
+      "tagName": "a",
+      "text": "경제",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/economy",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 744,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-147",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 784,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-148",
+      "tagName": "a",
+      "text": "정치",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/politics#1",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 784,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-150",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 824,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-151",
+      "tagName": "a",
+      "text": "국제",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/world",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 824,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-153",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 864,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-154",
+      "tagName": "a",
+      "text": "문화",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/culture#1",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 864,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-156",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 904,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-157",
+      "tagName": "a",
+      "text": "생활",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/life",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 904,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-159",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 944,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-160",
+      "tagName": "a",
+      "text": "ITㆍ과학",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/tech",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 944,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    }
+  ],
+  "newlyVisibleNodes": [],
+  "changedNodes": [],
+  "deltaLabelNodes": [
+    {
+      "nodeId": "node-134",
+      "tagName": "ul",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "list_sort"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 616,
+        "width": 160,
+        "height": 376
+      },
+      "isVisible": true,
+      "selectorHint": "ul.list_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_large",
+        "vis_above_fold",
+        "vis_central",
+        "sem_structural",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-135",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 624,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-136",
+      "tagName": "a",
+      "text": "뉴스홈",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 624,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 7,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 7,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-138",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 664,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-139",
+      "tagName": "a",
+      "text": "기후ㆍ환경",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/climate",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 664,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-141",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 704,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-142",
+      "tagName": "a",
+      "text": "사회",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/society#1",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 704,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-144",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 744,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-145",
+      "tagName": "a",
+      "text": "경제",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/economy",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 744,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-147",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 784,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-148",
+      "tagName": "a",
+      "text": "정치",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/politics#1",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 784,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-150",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 824,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-151",
+      "tagName": "a",
+      "text": "국제",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/world",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 824,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-153",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 864,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-154",
+      "tagName": "a",
+      "text": "문화",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/culture#1",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 864,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-156",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 904,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-157",
+      "tagName": "a",
+      "text": "생활",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/life",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 904,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-159",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 400,
+        "y": 944,
+        "width": 160,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "li",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-160",
+      "tagName": "a",
+      "text": "ITㆍ과학",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_sort"
+      ],
+      "href": "https://news.daum.net/tech",
+      "type": null,
+      "bbox": {
+        "x": 408,
+        "y": 944,
+        "width": 144,
+        "height": 40
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_sort",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    }
+  ],
+  "unchangedNodesCount": 804,
+  "deltaLabelNodesCount": 19,
+  "backgroundNoiseCount": 8,
+  "newRegions": [
+    {
+      "x": 400,
+      "y": 616,
+      "width": 160,
+      "height": 376,
+      "nodeId": "node-134",
+      "tagName": "ul",
+      "text": ""
+    },
+    {
+      "x": 400,
+      "y": 624,
+      "width": 160,
+      "height": 40,
+      "nodeId": "node-135",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 408,
+      "y": 624,
+      "width": 144,
+      "height": 40,
+      "nodeId": "node-136",
+      "tagName": "a",
+      "text": "뉴스홈"
+    },
+    {
+      "x": 400,
+      "y": 664,
+      "width": 160,
+      "height": 40,
+      "nodeId": "node-138",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 408,
+      "y": 664,
+      "width": 144,
+      "height": 40,
+      "nodeId": "node-139",
+      "tagName": "a",
+      "text": "기후ㆍ환경"
+    },
+    {
+      "x": 400,
+      "y": 704,
+      "width": 160,
+      "height": 40,
+      "nodeId": "node-141",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 408,
+      "y": 704,
+      "width": 144,
+      "height": 40,
+      "nodeId": "node-142",
+      "tagName": "a",
+      "text": "사회"
+    },
+    {
+      "x": 400,
+      "y": 744,
+      "width": 160,
+      "height": 40,
+      "nodeId": "node-144",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 408,
+      "y": 744,
+      "width": 144,
+      "height": 40,
+      "nodeId": "node-145",
+      "tagName": "a",
+      "text": "경제"
+    },
+    {
+      "x": 400,
+      "y": 784,
+      "width": 160,
+      "height": 40,
+      "nodeId": "node-147",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 408,
+      "y": 784,
+      "width": 144,
+      "height": 40,
+      "nodeId": "node-148",
+      "tagName": "a",
+      "text": "정치"
+    },
+    {
+      "x": 400,
+      "y": 824,
+      "width": 160,
+      "height": 40,
+      "nodeId": "node-150",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 408,
+      "y": 824,
+      "width": 144,
+      "height": 40,
+      "nodeId": "node-151",
+      "tagName": "a",
+      "text": "국제"
+    },
+    {
+      "x": 400,
+      "y": 864,
+      "width": 160,
+      "height": 40,
+      "nodeId": "node-153",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 408,
+      "y": 864,
+      "width": 144,
+      "height": 40,
+      "nodeId": "node-154",
+      "tagName": "a",
+      "text": "문화"
+    },
+    {
+      "x": 400,
+      "y": 904,
+      "width": 160,
+      "height": 40,
+      "nodeId": "node-156",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 408,
+      "y": 904,
+      "width": 144,
+      "height": 40,
+      "nodeId": "node-157",
+      "tagName": "a",
+      "text": "생활"
+    },
+    {
+      "x": 400,
+      "y": 944,
+      "width": 160,
+      "height": 40,
+      "nodeId": "node-159",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 408,
+      "y": 944,
+      "width": 144,
+      "height": 40,
+      "nodeId": "node-160",
+      "tagName": "a",
+      "text": "ITㆍ과학"
+    }
+  ],
+  "summary": "Detected 19 new node(s) and 25 mutation(s).",
+  "startedAt": "2026-04-17T09:38:26.219Z",
+  "finishedAt": "2026-04-17T09:38:40.494Z",
+  "durationMs": 14275,
+  "workerSlot": 1
+}

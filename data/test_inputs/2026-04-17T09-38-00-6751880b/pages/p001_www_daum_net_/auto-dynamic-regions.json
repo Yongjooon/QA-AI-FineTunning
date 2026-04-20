@@ -1,0 +1,2256 @@
+{
+  "detectionEnabled": true,
+  "observationMs": 5000,
+  "overlapThreshold": 0.3,
+  "regionCount": 114,
+  "regions": [
+    {
+      "bbox": {
+        "x": 376,
+        "y": 204,
+        "width": 768,
+        "height": 130
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "board_g",
+        "board_banner"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 525,
+        "y": 560,
+        "width": 595,
+        "height": 64
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper",
+        "list_tab",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 5
+    },
+    {
+      "bbox": {
+        "x": 525,
+        "y": 568,
+        "width": 595,
+        "height": 56
+      },
+      "reasons": [
+        "class_keyword_match",
+        "passive_mutation"
+      ],
+      "observedMutationCount": 8,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-wrapper",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 5
+    },
+    {
+      "bbox": {
+        "x": 533,
+        "y": 568,
+        "width": 121,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match",
+        "passive_mutation"
+      ],
+      "observedMutationCount": 8,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-270",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 662,
+        "y": 568,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-271",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 731,
+        "y": 568,
+        "width": 75,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-272",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 814,
+        "y": 568,
+        "width": 90,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-274",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 912,
+        "y": 568,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-273",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 981,
+        "y": 568,
+        "width": 85,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-276",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 376,
+        "y": 1081,
+        "width": 768,
+        "height": 130
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "board_g",
+        "board_banner"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 525,
+        "y": 1243,
+        "width": 595,
+        "height": 64
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper",
+        "list_tab",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 2
+    },
+    {
+      "bbox": {
+        "x": 525,
+        "y": 1251,
+        "width": 595,
+        "height": 56
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-wrapper",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 2
+    },
+    {
+      "bbox": {
+        "x": 533,
+        "y": 1251,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-74",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 602,
+        "y": 1251,
+        "width": 121,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-75",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 730,
+        "y": 1251,
+        "width": 104,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-76",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 842,
+        "y": 1251,
+        "width": 90,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-77",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 940,
+        "y": 1251,
+        "width": 80,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-78",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 542,
+        "y": 1780,
+        "width": 578,
+        "height": 64
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper",
+        "list_tab",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 542,
+        "y": 1788,
+        "width": 578,
+        "height": 56
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-wrapper",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 550,
+        "y": 1788,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-37",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 619,
+        "y": 1788,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-338",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 688,
+        "y": 1788,
+        "width": 90,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-346",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 785,
+        "y": 1788,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-354",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 854,
+        "y": 1788,
+        "width": 90,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-362",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 952,
+        "y": 1788,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-370",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1021,
+        "y": 1788,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-378",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1089,
+        "y": 1788,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-386",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1158,
+        "y": 1788,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-394",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1227,
+        "y": 1788,
+        "width": 83,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-402",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1318,
+        "y": 1788,
+        "width": 80,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-331",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 400,
+        "y": 2038,
+        "width": 350,
+        "height": 170
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": "scoreboard_310",
+      "classNames": [
+        "swiper",
+        "list_scoreboard",
+        "swiper-initialized",
+        "swiper-horizontal",
+        "swiper-backface-hidden"
+      ],
+      "excludedTriggerCount": 2
+    },
+    {
+      "bbox": {
+        "x": 50,
+        "y": 2038,
+        "width": 350,
+        "height": 170
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-wrapper"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 50,
+        "y": 2038,
+        "width": 350,
+        "height": 170
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb",
+        "swiper-slide-next",
+        "swiper-slide-prev"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 400,
+        "y": 2038,
+        "width": 350,
+        "height": 170
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb",
+        "swiper-slide-active"
+      ],
+      "excludedTriggerCount": 2
+    },
+    {
+      "bbox": {
+        "x": 525,
+        "y": 2317,
+        "width": 595,
+        "height": 64
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper",
+        "list_tab",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 3
+    },
+    {
+      "bbox": {
+        "x": 525,
+        "y": 2325,
+        "width": 595,
+        "height": 56
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-wrapper",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 3
+    },
+    {
+      "bbox": {
+        "x": 533,
+        "y": 2325,
+        "width": 109,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-4561",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 650,
+        "y": 2325,
+        "width": 109,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-4586",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 766,
+        "y": 2325,
+        "width": 95,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-4599",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 595,
+        "y": 2854,
+        "width": 525,
+        "height": 64
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper",
+        "list_tab",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 595,
+        "y": 2862,
+        "width": 525,
+        "height": 56
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-wrapper",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 603,
+        "y": 2862,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-51",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 672,
+        "y": 2862,
+        "width": 90,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-52",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 562,
+        "y": 3391,
+        "width": 558,
+        "height": 64
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper",
+        "list_tab",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 9
+    },
+    {
+      "bbox": {
+        "x": 562,
+        "y": 3399,
+        "width": 558,
+        "height": 56
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-wrapper",
+        "svelte-73jkt2"
+      ],
+      "excludedTriggerCount": 9
+    },
+    {
+      "bbox": {
+        "x": 570,
+        "y": 3399,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-140",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 639,
+        "y": 3399,
+        "width": 60,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-170",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 706,
+        "y": 3399,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-175",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 775,
+        "y": 3399,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-176",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 844,
+        "y": 3399,
+        "width": 75,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-172",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 927,
+        "y": 3399,
+        "width": 72,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-174",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1007,
+        "y": 3399,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-171",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1076,
+        "y": 3399,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-177",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 2
+    },
+    {
+      "bbox": {
+        "x": 1144,
+        "y": 3399,
+        "width": 61,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-160",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1213,
+        "y": 3399,
+        "width": 94,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-173",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1315,
+        "y": 3399,
+        "width": 90,
+        "height": 40
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_tab",
+        "tabcode-169",
+        "svelte-1lsx4zq"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1231,
+        "y": 134,
+        "width": 128,
+        "height": 64
+      },
+      "reasons": [
+        "class_keyword_match",
+        "passive_mutation"
+      ],
+      "observedMutationCount": 8,
+      "tagName": "ol",
+      "id": null,
+      "classNames": [
+        "list_trendrank"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1231,
+        "y": 134,
+        "width": 128,
+        "height": 64
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "li",
+      "id": null,
+      "classNames": [
+        "rolling"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 1793,
+        "width": 384,
+        "height": 114
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": "stock_257",
+      "classNames": [
+        "swiper",
+        "list_stocktop",
+        "swiper-initialized",
+        "swiper-vertical",
+        "swiper-backface-hidden"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 1793,
+        "width": 384,
+        "height": 114
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-wrapper"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 1793,
+        "width": 384,
+        "height": 114
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_stock",
+        "swiper-slide-active"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 1907,
+        "width": 384,
+        "height": 114
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_stock",
+        "swiper-slide-next"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 2021,
+        "width": 384,
+        "height": 114
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_stock"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper",
+        "list_shorts",
+        "swiper-initialized",
+        "swiper-horizontal",
+        "swiper-backface-hidden"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-wrapper"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "swiper-slide-active"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1544,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "swiper-slide-next"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1928,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 2312,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 2696,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 3080,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 3464,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 3848,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 4232,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 4616,
+        "y": 2431,
+        "width": 384,
+        "height": 520
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 4501,
+        "width": 384,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match",
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": "box_ranking_265",
+      "classNames": [
+        "swiper",
+        "list_thumb",
+        "swiper-initialized",
+        "swiper-horizontal",
+        "swiper-backface-hidden"
+      ],
+      "excludedTriggerCount": 2
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 4501,
+        "width": 384,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match",
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": "swiper-wrapper-1cee03f76a32d417",
+      "classNames": [
+        "swiper-wrapper"
+      ],
+      "excludedTriggerCount": 2
+    },
+    {
+      "bbox": {
+        "x": 1184,
+        "y": 4501,
+        "width": 160,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb",
+        "swiper-slide-active"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1360,
+        "y": 4501,
+        "width": 160,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb",
+        "swiper-slide-next"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 1536,
+        "y": 4501,
+        "width": 160,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1712,
+        "y": 4501,
+        "width": 160,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1888,
+        "y": 4501,
+        "width": 160,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 2064,
+        "y": 4501,
+        "width": 160,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 2240,
+        "y": 4501,
+        "width": 160,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 2416,
+        "y": 4501,
+        "width": 160,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 2592,
+        "y": 4501,
+        "width": 160,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 2768,
+        "y": 4501,
+        "width": 160,
+        "height": 210
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_thumb"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 4393,
+        "width": 384,
+        "height": 339
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "box_g",
+        "box_ranking"
+      ],
+      "excludedTriggerCount": 6
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": "today_photo_266",
+      "classNames": [
+        "swiper",
+        "list_todayphoto",
+        "swiper-initialized",
+        "swiper-horizontal",
+        "swiper-backface-hidden"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-wrapper"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1160,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_photo",
+        "swiper-slide-active"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1544,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_photo",
+        "swiper-slide-next"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1928,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_photo"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 2312,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_photo"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 2696,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_photo"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 3080,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_photo"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 3464,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_photo"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 3848,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_photo"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 4232,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_photo"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 4616,
+        "y": 4748,
+        "width": 384,
+        "height": 384
+      },
+      "reasons": [
+        "class_keyword_match"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "div",
+      "id": null,
+      "classNames": [
+        "swiper-slide",
+        "item_photo"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 664,
+        "y": 1015,
+        "width": 192,
+        "height": 38
+      },
+      "reasons": [
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "span",
+      "id": null,
+      "classNames": [
+        "inner_extend"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 664,
+        "y": 1698,
+        "width": 192,
+        "height": 38
+      },
+      "reasons": [
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "span",
+      "id": null,
+      "classNames": [
+        "inner_extend"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 664,
+        "y": 2235,
+        "width": 192,
+        "height": 38
+      },
+      "reasons": [
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "span",
+      "id": null,
+      "classNames": [
+        "inner_extend"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 664,
+        "y": 2772,
+        "width": 192,
+        "height": 38
+      },
+      "reasons": [
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "span",
+      "id": null,
+      "classNames": [
+        "inner_extend"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 664,
+        "y": 3309,
+        "width": 192,
+        "height": 38
+      },
+      "reasons": [
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "span",
+      "id": null,
+      "classNames": [
+        "inner_extend"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 664,
+        "y": 4032,
+        "width": 192,
+        "height": 38
+      },
+      "reasons": [
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "span",
+      "id": null,
+      "classNames": [
+        "inner_extend"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1320,
+        "y": 1671,
+        "width": 64,
+        "height": 38
+      },
+      "reasons": [
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "span",
+      "id": null,
+      "classNames": [
+        "inner_extend"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1320,
+        "y": 2967,
+        "width": 64,
+        "height": 38
+      },
+      "reasons": [
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "span",
+      "id": null,
+      "classNames": [
+        "inner_extend"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 1320,
+        "y": 4321,
+        "width": 64,
+        "height": 38
+      },
+      "reasons": [
+        "aria_live_attribute"
+      ],
+      "observedMutationCount": 0,
+      "tagName": "span",
+      "id": null,
+      "classNames": [
+        "inner_extend"
+      ],
+      "excludedTriggerCount": 0
+    },
+    {
+      "bbox": {
+        "x": 385,
+        "y": 2103,
+        "width": 38,
+        "height": 38
+      },
+      "reasons": [
+        "passive_mutation"
+      ],
+      "observedMutationCount": 8,
+      "tagName": "a",
+      "id": "scoreboard_310_prev",
+      "classNames": [
+        "link_prev"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 727,
+        "y": 2103,
+        "width": 38,
+        "height": 38
+      },
+      "reasons": [
+        "passive_mutation"
+      ],
+      "observedMutationCount": 8,
+      "tagName": "a",
+      "id": "scoreboard_310_next",
+      "classNames": [
+        "link_next"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 625,
+        "y": 1016,
+        "width": 38,
+        "height": 38
+      },
+      "reasons": [
+        "passive_mutation"
+      ],
+      "observedMutationCount": 8,
+      "tagName": "a",
+      "id": null,
+      "classNames": [
+        "link_prev"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 857,
+        "y": 1016,
+        "width": 38,
+        "height": 38
+      },
+      "reasons": [
+        "passive_mutation"
+      ],
+      "observedMutationCount": 8,
+      "tagName": "a",
+      "id": null,
+      "classNames": [
+        "link_next"
+      ],
+      "excludedTriggerCount": 1
+    },
+    {
+      "bbox": {
+        "x": 50,
+        "y": 2038,
+        "width": 350,
+        "height": 85
+      },
+      "reasons": [
+        "passive_mutation"
+      ],
+      "observedMutationCount": 3,
+      "tagName": "a",
+      "id": null,
+      "classNames": [
+        "link_cont"
+      ],
+      "excludedTriggerCount": 0
+    }
+  ]
+}

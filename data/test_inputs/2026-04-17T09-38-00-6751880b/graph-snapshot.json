@@ -1,0 +1,28 @@
+{
+  "nodeCount": 1,
+  "edgeCount": 0,
+  "nodes": {
+    "www.daum.net/": {
+      "nodeId": "4325eb92-e0c0-4ca2-a14b-d5a6df3fc224",
+      "hostname": "www.daum.net",
+      "normalizedPath": "/",
+      "dedupKey": "www.daum.net/",
+      "representativeUrl": "https://www.daum.net/",
+      "discoveredVariants": [
+        "https://www.daum.net/"
+      ],
+      "firstSeenAt": "2026-04-17T09:39:16.527Z",
+      "lastSeenAt": "2026-04-17T09:39:16.537Z",
+      "discoveredByJobIds": [
+        "2026-04-17T09-38-00-6751880b"
+      ],
+      "analyzed": true,
+      "analyzedAt": "2026-04-17T09:39:16.540Z",
+      "analysisStatus": "success",
+      "lastReachabilityStatus": null,
+      "authGated": false,
+      "notes": null
+    }
+  },
+  "edges": {}
+}

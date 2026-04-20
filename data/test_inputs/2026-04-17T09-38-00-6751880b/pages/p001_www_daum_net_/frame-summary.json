@@ -1,0 +1,56 @@
+{
+  "totalFrameCount": 4,
+  "sameOriginCount": 0,
+  "crossOriginCount": 4,
+  "contentFrameCount": 0,
+  "largeFrameCount": 0,
+  "frames": [
+    {
+      "type": "cross-origin",
+      "frameUrl": "https://shop-redapi.daum.net/…",
+      "srcAttr": "https://shop-redapi.daum.net/red-apigate/daumtop/v8/planmall",
+      "bbox": {
+        "x": 1160,
+        "y": 3039,
+        "width": 384,
+        "height": 644
+      },
+      "vpCoverage": 0.119,
+      "likelyRole": "unknown",
+      "inspected": false,
+      "note": "cross-origin frame — DOM not inspectable due to browser security policy"
+    },
+    {
+      "type": "cross-origin",
+      "frameUrl": "https://googleads.g.doubleclick.net/…",
+      "srcAttr": "https://googleads.g.doubleclick.net/pagead/html/r20260415/r20190131/zrt_lookup_fy2021.html",
+      "bbox": null,
+      "vpCoverage": 0,
+      "likelyRole": "advertisement",
+      "inspected": false,
+      "note": "cross-origin frame — DOM not inspectable due to browser security policy"
+    },
+    {
+      "type": "cross-origin",
+      "frameUrl": "https://googleads.g.doubleclick.net/…",
+      "srcAttr": "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1682288257759598&output=html&adk=1812271804&adf=3025194257&lmt=1776418683&plaf=1%3A2%2C2%3A2%2C7%3A2&plat=1%3A128%2C2%3A128%2C3%3A128%2C4%3A128%2C8%3A128%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32&format=0x0&url=https%3A%2F%2Fwww.daum.net%2F&pra=5&aiof=9&asro=0&aiapmid=0.0001&aiactd=0&aicctd=0&ailctd=0&aimartd=4&aieuf=1&aicrs=1&uach=WyJXaW5kb3dzIiwiMTAuMCIsIng4NiIsIiIsIjE0Ny4wLjc3MjcuNTYiLG51bGwsMCxudWxsLCI2NCIsW1siR29vZ2xlIENocm9tZSIsIjE0Ny4wLjc3MjcuNTYiXSxbIk5vdC5BL0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxNDcuMC43NzI3LjU2Il1dLDBd&abgtt=6&dt=1776418682870&bpp=4&bdt=1177&idt=309&shv=r20260415&mjsv=m202604150101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&nras=1&correlator=8684776205051&frm=20&pv=2&u_tz=540&u_his=2&u_h=1080&u_w=1920&u_ah=1080&u_aw=1920&u_cd=24&u_sd=1&dmc=32&adx=-12245933&ady=-12245933&biw=1920&bih=1080&scr_x=0&scr_y=0&eid=42531705%2C95384087%2C95387509%2C31097929%2C95387625%2C95388268%2C95387777&oid=2&pvsid=4598101584121828&tmod=1212094033&uas=0&nvt=1&fsapi=1&fc=1920&brdim=10%2C10%2C10%2C10%2C1920%2C0%2C1920%2C1080%2C1920%2C1080&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32768&bc=31&bz=1&ifi=1&uci=a!1&fsb=1&dtd=328",
+      "bbox": null,
+      "vpCoverage": 0,
+      "likelyRole": "advertisement",
+      "inspected": false,
+      "note": "cross-origin frame — DOM not inspectable due to browser security policy"
+    },
+    {
+      "type": "cross-origin",
+      "frameUrl": "https://www.google.com/…",
+      "srcAttr": "https://www.google.com/recaptcha/api2/aframe",
+      "bbox": null,
+      "vpCoverage": 0,
+      "likelyRole": "captcha",
+      "inspected": false,
+      "note": "cross-origin frame — DOM not inspectable due to browser security policy"
+    }
+  ],
+  "warnings": [],
+  "qualityWarnings": []
+}

@@ -1,0 +1,39 @@
+{
+  "degradedMode": false,
+  "readinessScore": 1,
+  "elapsedMs": 848,
+  "message": "ready — 6/6 signals passed in 848ms",
+  "signals": [
+    {
+      "signal": "networkIdle",
+      "passed": true,
+      "note": "idle within 2000ms"
+    },
+    {
+      "signal": "hasTitle",
+      "passed": true
+    },
+    {
+      "signal": "minElementCount",
+      "passed": true,
+      "value": 1740,
+      "threshold": 20
+    },
+    {
+      "signal": "noLoadingIndicator",
+      "passed": true,
+      "loadingCount": 0,
+      "loadingRatio": 0
+    },
+    {
+      "signal": "layoutStable",
+      "passed": true
+    },
+    {
+      "signal": "contentContainer",
+      "passed": true
+    }
+  ],
+  "warnings": [],
+  "qualityWarnings": []
+}

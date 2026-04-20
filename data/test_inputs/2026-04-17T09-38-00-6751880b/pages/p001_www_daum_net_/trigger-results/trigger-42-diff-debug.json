@@ -1,0 +1,17 @@
+{
+  "triggerId": "trigger-42",
+  "_note": "Delta computed by computeTriggerDelta multi-tier matching. Unchanged baseline nodes excluded from annotation.",
+  "baselineVisibleNodeCount": 815,
+  "afterVisibleNodeCount": 806,
+  "newNodeCount": 0,
+  "newlyVisibleNodeCount": 0,
+  "changedNodeCount": 0,
+  "unchangedNodesCount": 782,
+  "backgroundNoiseCount": 24,
+  "deltaLabelNodesCount": 0,
+  "newNodeIds": [],
+  "newlyVisibleNodeIds": [],
+  "changedNodeIds": [],
+  "finalLabeledDeltaNodeIds": [],
+  "ignoredUnchangedNodeCount": 782
+}

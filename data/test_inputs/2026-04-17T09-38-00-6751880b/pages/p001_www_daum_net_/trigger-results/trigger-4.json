@@ -1,0 +1,5357 @@
+{
+  "triggerId": "trigger-4",
+  "action": "click",
+  "status": "success",
+  "screenshotMode": "changedRegion",
+  "beforeScreenshot": null,
+  "afterScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-4-after.png",
+  "annotatedScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-4-annotated.png",
+  "diffDebug": "outputs/p001_www_daum_net_/trigger-results/trigger-4-diff-debug.json",
+  "mutationCount": 4,
+  "mutations": [
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(-350px, 0px, 0px); transition-duration: 300ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "swiper-wrapper",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "transform: translate3d(-350px, 0px, 0px); transition-duration: 0ms;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "button",
+      "targetId": null,
+      "targetClass": "btn_help",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-expanded",
+      "oldValue": null
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": "VKILayout",
+      "targetClass": "",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display:none"
+    }
+  ],
+  "newNodes": [
+    {
+      "nodeId": "node-1433",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "keyboard_layer",
+        "kor_basic"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1384,
+        "y": 740,
+        "width": 512,
+        "height": 248
+      },
+      "isVisible": true,
+      "selectorHint": "div.keyboard_layer.kor_basic",
+      "group": "unknown",
+      "qualityScore": 4,
+      "qualityReasons": [
+        "multi_children",
+        "large_area"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_large"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1434",
+      "tagName": "strong",
+      "text": "한글",
+      "role": null,
+      "id": null,
+      "classList": [
+        "img_keyboard",
+        "tit_keyboard"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 759,
+        "width": 28,
+        "height": 15
+      },
+      "isVisible": true,
+      "selectorHint": "strong.img_keyboard.tit_keyboard",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": -1,
+      "focusReasons": [
+        "vis_central",
+        "noise_empty_leaf"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -4,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-4 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1435",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "group_keyboard"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 788,
+        "width": 491,
+        "height": 180
+      },
+      "isVisible": true,
+      "selectorHint": "div.group_keyboard",
+      "group": "unknown",
+      "qualityScore": 4,
+      "qualityReasons": [
+        "multi_children",
+        "large_area"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_large",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1436",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "keyboard_line"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 788,
+        "width": 491,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "div.keyboard_line",
+      "group": "unknown",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "multi_children",
+        "medium_area"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1437",
+      "tagName": "button",
+      "text": "`",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_0"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1404,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_0",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1438",
+      "tagName": "button",
+      "text": "1",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_1"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1436,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_1",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1439",
+      "tagName": "button",
+      "text": "2",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_2"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1468,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_2",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1440",
+      "tagName": "button",
+      "text": "3",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_3"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1500,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_3",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1441",
+      "tagName": "button",
+      "text": "4",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_4"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1532,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_4",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1442",
+      "tagName": "button",
+      "text": "5",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_5"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1564,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_5",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1443",
+      "tagName": "button",
+      "text": "6",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_6"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1596,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_6",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1444",
+      "tagName": "button",
+      "text": "7",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_7"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1628,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_7",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1445",
+      "tagName": "button",
+      "text": "8",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_8"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1660,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_8",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1446",
+      "tagName": "button",
+      "text": "9",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_9"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1692,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_9",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1447",
+      "tagName": "button",
+      "text": "0",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_10"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1724,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_10",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1448",
+      "tagName": "button",
+      "text": "-",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_11"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1756,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_11",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1449",
+      "tagName": "button",
+      "text": "=",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_12"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1788,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_12",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1450",
+      "tagName": "button",
+      "text": "bksp",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_bksp"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1820,
+        "y": 788,
+        "width": 56,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_bksp",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "sem_interactive",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1451",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "keyboard_line"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 824,
+        "width": 491,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "div.keyboard_line",
+      "group": "unknown",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "multi_children",
+        "medium_area"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1452",
+      "tagName": "button",
+      "text": "ㅂ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_13"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1450,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_13",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1453",
+      "tagName": "button",
+      "text": "ㅈ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_14"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1482,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_14",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1454",
+      "tagName": "button",
+      "text": "ㄷ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_15"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1514,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_15",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1455",
+      "tagName": "button",
+      "text": "ㄱ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_16"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1546,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_16",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1456",
+      "tagName": "button",
+      "text": "ㅅ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_17"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1578,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_17",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1457",
+      "tagName": "button",
+      "text": "ㅛ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_18"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1610,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_18",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1458",
+      "tagName": "button",
+      "text": "ㅕ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_19"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1642,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_19",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1459",
+      "tagName": "button",
+      "text": "ㅑ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_20"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1674,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_20",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1460",
+      "tagName": "button",
+      "text": "ㅐ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_21"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1706,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_21",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1461",
+      "tagName": "button",
+      "text": "ㅔ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_22"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1738,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_22",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1462",
+      "tagName": "button",
+      "text": "[",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_23"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1770,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_23",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1463",
+      "tagName": "button",
+      "text": "]",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_24"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1802,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_24",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1464",
+      "tagName": "button",
+      "text": "\\",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_25"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1834,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_25",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1465",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "keyboard_line"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 860,
+        "width": 491,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "div.keyboard_line",
+      "group": "unknown",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "multi_children",
+        "medium_area"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1466",
+      "tagName": "button",
+      "text": "ㅁ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_26"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1464,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_26",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1467",
+      "tagName": "button",
+      "text": "ㄴ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_27"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1496,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_27",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1468",
+      "tagName": "button",
+      "text": "ㅇ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_28"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1528,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_28",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1469",
+      "tagName": "button",
+      "text": "ㄹ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_29"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1560,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_29",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1470",
+      "tagName": "button",
+      "text": "ㅎ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_30"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1592,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_30",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1471",
+      "tagName": "button",
+      "text": "ㅗ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_31"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1624,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_31",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1472",
+      "tagName": "button",
+      "text": "ㅓ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_32"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1656,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_32",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1473",
+      "tagName": "button",
+      "text": "ㅏ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_33"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1688,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_33",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1474",
+      "tagName": "button",
+      "text": "ㅣ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_34"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1720,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_34",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1475",
+      "tagName": "button",
+      "text": ";",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_35"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1752,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_35",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1476",
+      "tagName": "button",
+      "text": "'",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_36"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1784,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_36",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1477",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "keyboard_line"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 896,
+        "width": 491,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "div.keyboard_line",
+      "group": "unknown",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "multi_children",
+        "medium_area"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1478",
+      "tagName": "button",
+      "text": "shift",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_shift"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1404,
+        "y": 896,
+        "width": 74,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_shift",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1479",
+      "tagName": "button",
+      "text": "ㅋ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_37"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1482,
+        "y": 896,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_37",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1480",
+      "tagName": "button",
+      "text": "ㅌ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_38"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1514,
+        "y": 896,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_38",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1481",
+      "tagName": "button",
+      "text": "ㅊ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_39"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1546,
+        "y": 896,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_39",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1482",
+      "tagName": "button",
+      "text": "ㅍ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_40"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1578,
+        "y": 896,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_40",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    }
+  ],
+  "newlyVisibleNodes": [],
+  "changedNodes": [],
+  "deltaLabelNodes": [
+    {
+      "nodeId": "node-1433",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "keyboard_layer",
+        "kor_basic"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1384,
+        "y": 740,
+        "width": 512,
+        "height": 248
+      },
+      "isVisible": true,
+      "selectorHint": "div.keyboard_layer.kor_basic",
+      "group": "unknown",
+      "qualityScore": 4,
+      "qualityReasons": [
+        "multi_children",
+        "large_area"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_large"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1434",
+      "tagName": "strong",
+      "text": "한글",
+      "role": null,
+      "id": null,
+      "classList": [
+        "img_keyboard",
+        "tit_keyboard"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 759,
+        "width": 28,
+        "height": 15
+      },
+      "isVisible": true,
+      "selectorHint": "strong.img_keyboard.tit_keyboard",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": -1,
+      "focusReasons": [
+        "vis_central",
+        "noise_empty_leaf"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -4,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-4 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1435",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "group_keyboard"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 788,
+        "width": 491,
+        "height": 180
+      },
+      "isVisible": true,
+      "selectorHint": "div.group_keyboard",
+      "group": "unknown",
+      "qualityScore": 4,
+      "qualityReasons": [
+        "multi_children",
+        "large_area"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_large",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1436",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "keyboard_line"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 788,
+        "width": 491,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "div.keyboard_line",
+      "group": "unknown",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "multi_children",
+        "medium_area"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1437",
+      "tagName": "button",
+      "text": "`",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_0"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1404,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_0",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1438",
+      "tagName": "button",
+      "text": "1",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_1"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1436,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_1",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1439",
+      "tagName": "button",
+      "text": "2",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_2"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1468,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_2",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1440",
+      "tagName": "button",
+      "text": "3",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_3"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1500,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_3",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1441",
+      "tagName": "button",
+      "text": "4",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_4"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1532,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_4",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1442",
+      "tagName": "button",
+      "text": "5",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_5"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1564,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_5",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1443",
+      "tagName": "button",
+      "text": "6",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_6"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1596,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_6",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1444",
+      "tagName": "button",
+      "text": "7",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_7"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1628,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_7",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1445",
+      "tagName": "button",
+      "text": "8",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_8"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1660,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_8",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1446",
+      "tagName": "button",
+      "text": "9",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_9"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1692,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_9",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1447",
+      "tagName": "button",
+      "text": "0",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_10"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1724,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_10",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1448",
+      "tagName": "button",
+      "text": "-",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_11"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1756,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_11",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1449",
+      "tagName": "button",
+      "text": "=",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_12"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1788,
+        "y": 788,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_12",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1450",
+      "tagName": "button",
+      "text": "bksp",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_bksp"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1820,
+        "y": 788,
+        "width": 56,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_bksp",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "sem_interactive",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1451",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "keyboard_line"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 824,
+        "width": 491,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "div.keyboard_line",
+      "group": "unknown",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "multi_children",
+        "medium_area"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1452",
+      "tagName": "button",
+      "text": "ㅂ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_13"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1450,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_13",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1453",
+      "tagName": "button",
+      "text": "ㅈ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_14"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1482,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_14",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1454",
+      "tagName": "button",
+      "text": "ㄷ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_15"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1514,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_15",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1455",
+      "tagName": "button",
+      "text": "ㄱ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_16"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1546,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_16",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1456",
+      "tagName": "button",
+      "text": "ㅅ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_17"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1578,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_17",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1457",
+      "tagName": "button",
+      "text": "ㅛ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_18"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1610,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_18",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1458",
+      "tagName": "button",
+      "text": "ㅕ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_19"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1642,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_19",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1459",
+      "tagName": "button",
+      "text": "ㅑ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_20"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1674,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_20",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1460",
+      "tagName": "button",
+      "text": "ㅐ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_21"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1706,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_21",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1461",
+      "tagName": "button",
+      "text": "ㅔ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_22"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1738,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_22",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1462",
+      "tagName": "button",
+      "text": "[",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_23"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1770,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_23",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1463",
+      "tagName": "button",
+      "text": "]",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_24"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1802,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_24",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1464",
+      "tagName": "button",
+      "text": "\\",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_25"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1834,
+        "y": 824,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_25",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1465",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "keyboard_line"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 860,
+        "width": 491,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "div.keyboard_line",
+      "group": "unknown",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "multi_children",
+        "medium_area"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1466",
+      "tagName": "button",
+      "text": "ㅁ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_26"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1464,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_26",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1467",
+      "tagName": "button",
+      "text": "ㄴ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_27"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1496,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_27",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1468",
+      "tagName": "button",
+      "text": "ㅇ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_28"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1528,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_28",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1469",
+      "tagName": "button",
+      "text": "ㄹ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_29"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1560,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_29",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1470",
+      "tagName": "button",
+      "text": "ㅎ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_30"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1592,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_30",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1471",
+      "tagName": "button",
+      "text": "ㅗ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_31"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1624,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_31",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1472",
+      "tagName": "button",
+      "text": "ㅓ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_32"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1656,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_32",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1473",
+      "tagName": "button",
+      "text": "ㅏ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_33"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1688,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_33",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1474",
+      "tagName": "button",
+      "text": "ㅣ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_34"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1720,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_34",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1475",
+      "tagName": "button",
+      "text": ";",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_35"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1752,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_35",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1476",
+      "tagName": "button",
+      "text": "'",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_36"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1784,
+        "y": 860,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_36",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1477",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "keyboard_line"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1404,
+        "y": 896,
+        "width": 491,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "div.keyboard_line",
+      "group": "unknown",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "multi_children",
+        "medium_area"
+      ],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_medium",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1478",
+      "tagName": "button",
+      "text": "shift",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_shift"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1404,
+        "y": 896,
+        "width": 74,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_shift",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1479",
+      "tagName": "button",
+      "text": "ㅋ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_37"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1482,
+        "y": 896,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_37",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1480",
+      "tagName": "button",
+      "text": "ㅌ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_38"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1514,
+        "y": 896,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_38",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1481",
+      "tagName": "button",
+      "text": "ㅊ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_39"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1546,
+        "y": 896,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_39",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1482",
+      "tagName": "button",
+      "text": "ㅍ",
+      "role": null,
+      "id": null,
+      "classList": [
+        "btn_keyboard",
+        "keyboard_40"
+      ],
+      "href": null,
+      "type": "button",
+      "bbox": {
+        "x": 1578,
+        "y": 896,
+        "width": 28,
+        "height": 32
+      },
+      "isVisible": true,
+      "selectorHint": "button.btn_keyboard.keyboard_40",
+      "group": "unknown",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 5,
+      "focusReasons": [
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "button",
+      "functionalCategoryCode": "BTN",
+      "functionalCategoryConfidence": 0.95,
+      "labelColor": "#E53E3E",
+      "categoryReason": [
+        "tag=button"
+      ],
+      "labelScore": 8,
+      "labelEligible": true,
+      "labelDropReason": null
+    }
+  ],
+  "unchangedNodesCount": 783,
+  "deltaLabelNodesCount": 62,
+  "backgroundNoiseCount": 21,
+  "newRegions": [
+    {
+      "x": 1384,
+      "y": 740,
+      "width": 512,
+      "height": 248,
+      "nodeId": "node-1433",
+      "tagName": "div",
+      "text": ""
+    },
+    {
+      "x": 1404,
+      "y": 759,
+      "width": 28,
+      "height": 15,
+      "nodeId": "node-1434",
+      "tagName": "strong",
+      "text": "한글"
+    },
+    {
+      "x": 1404,
+      "y": 788,
+      "width": 491,
+      "height": 180,
+      "nodeId": "node-1435",
+      "tagName": "div",
+      "text": ""
+    },
+    {
+      "x": 1404,
+      "y": 788,
+      "width": 491,
+      "height": 32,
+      "nodeId": "node-1436",
+      "tagName": "div",
+      "text": ""
+    },
+    {
+      "x": 1404,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1437",
+      "tagName": "button",
+      "text": "`"
+    },
+    {
+      "x": 1436,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1438",
+      "tagName": "button",
+      "text": "1"
+    },
+    {
+      "x": 1468,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1439",
+      "tagName": "button",
+      "text": "2"
+    },
+    {
+      "x": 1500,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1440",
+      "tagName": "button",
+      "text": "3"
+    },
+    {
+      "x": 1532,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1441",
+      "tagName": "button",
+      "text": "4"
+    },
+    {
+      "x": 1564,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1442",
+      "tagName": "button",
+      "text": "5"
+    },
+    {
+      "x": 1596,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1443",
+      "tagName": "button",
+      "text": "6"
+    },
+    {
+      "x": 1628,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1444",
+      "tagName": "button",
+      "text": "7"
+    },
+    {
+      "x": 1660,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1445",
+      "tagName": "button",
+      "text": "8"
+    },
+    {
+      "x": 1692,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1446",
+      "tagName": "button",
+      "text": "9"
+    },
+    {
+      "x": 1724,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1447",
+      "tagName": "button",
+      "text": "0"
+    },
+    {
+      "x": 1756,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1448",
+      "tagName": "button",
+      "text": "-"
+    },
+    {
+      "x": 1788,
+      "y": 788,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1449",
+      "tagName": "button",
+      "text": "="
+    },
+    {
+      "x": 1820,
+      "y": 788,
+      "width": 56,
+      "height": 32,
+      "nodeId": "node-1450",
+      "tagName": "button",
+      "text": "bksp"
+    },
+    {
+      "x": 1404,
+      "y": 824,
+      "width": 491,
+      "height": 32,
+      "nodeId": "node-1451",
+      "tagName": "div",
+      "text": ""
+    },
+    {
+      "x": 1450,
+      "y": 824,
+      "width": 28,
+      "height": 32,
+      "nodeId": "node-1452",
+      "tagName": "button",
+      "text": "ㅂ"
+    }
+  ],
+  "summary": "Detected 62 new node(s) and 4 mutation(s).",
+  "startedAt": "2026-04-17T09:38:15.418Z",
+  "finishedAt": "2026-04-17T09:38:25.742Z",
+  "durationMs": 10324,
+  "workerSlot": 2
+}

@@ -1,0 +1,76 @@
+{
+  "triggerId": "trigger-45",
+  "action": "click",
+  "status": "success",
+  "screenshotMode": "changedRegion",
+  "beforeScreenshot": null,
+  "afterScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-45-after.png",
+  "annotatedScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-45-annotated.png",
+  "diffDebug": "outputs/p001_www_daum_net_/trigger-results/trigger-45-diff-debug.json",
+  "mutationCount": 5,
+  "mutations": [
+    {
+      "type": "attributes",
+      "targetTag": "button",
+      "targetId": null,
+      "targetClass": "btn_help",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-expanded",
+      "oldValue": null
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "rolling rolling_end"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "rolling"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: block;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    }
+  ],
+  "newNodes": [],
+  "newlyVisibleNodes": [],
+  "changedNodes": [],
+  "deltaLabelNodes": [],
+  "unchangedNodesCount": 805,
+  "deltaLabelNodesCount": 0,
+  "backgroundNoiseCount": 1,
+  "newRegions": [],
+  "summary": "Detected 5 mutation(s).",
+  "startedAt": "2026-04-17T09:39:05.735Z",
+  "finishedAt": "2026-04-17T09:39:16.169Z",
+  "durationMs": 10434,
+  "workerSlot": 0
+}

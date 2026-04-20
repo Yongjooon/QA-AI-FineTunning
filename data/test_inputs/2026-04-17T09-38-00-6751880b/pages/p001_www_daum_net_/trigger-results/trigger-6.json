@@ -1,0 +1,4273 @@
+{
+  "triggerId": "trigger-6",
+  "action": "click",
+  "status": "success",
+  "screenshotMode": "changedRegion",
+  "beforeScreenshot": null,
+  "afterScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-6-after.png",
+  "annotatedScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-6-annotated.png",
+  "diffDebug": "outputs/p001_www_daum_net_/trigger-results/trigger-6-diff-debug.json",
+  "mutationCount": 12,
+  "mutations": [
+    {
+      "type": "attributes",
+      "targetTag": "button",
+      "targetId": null,
+      "targetClass": "btn_help",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-expanded",
+      "oldValue": null
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling rolling_end",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "li",
+      "targetId": null,
+      "targetClass": "rolling",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "style",
+      "oldValue": "display: none;"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "div",
+      "targetId": null,
+      "targetClass": "wrap_fold comp_fold",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "class",
+      "oldValue": "wrap_fold"
+    },
+    {
+      "type": "attributes",
+      "targetTag": "button",
+      "targetId": null,
+      "targetClass": "btn_fold",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "data-tiara-action-name",
+      "oldValue": "unfold"
+    }
+  ],
+  "newNodes": [
+    {
+      "nodeId": "node-938",
+      "tagName": "div",
+      "text": "",
+      "role": "region",
+      "id": null,
+      "classList": [
+        "wrap_fold",
+        "comp_fold"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1160,
+        "y": 145,
+        "width": 384,
+        "height": 434
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_fold.comp_fold",
+      "group": "main",
+      "qualityScore": 6,
+      "qualityReasons": [
+        "has_role",
+        "multi_children",
+        "large_area"
+      ],
+      "focusScore": 4,
+      "focusReasons": [
+        "vis_large",
+        "vis_above_fold",
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-948",
+      "tagName": "ol",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "list_trendrank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1160,
+        "y": 205,
+        "width": 384,
+        "height": 374
+      },
+      "isVisible": true,
+      "selectorHint": "ol.list_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_large",
+        "vis_above_fold",
+        "vis_central",
+        "sem_structural",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-949",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "rolling",
+        "rolling_end"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 205,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "li.rolling.rolling_end",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-950",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EC%95%88%ED%98%9C%EC%A7%84%20%EB%B0%B0%EA%B5%AC%EC%84%A0%EC%88%98",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 205,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-951",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 205,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-952",
+      "tagName": "em",
+      "text": "1",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 205,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-956",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%ED%94%84%EB%A1%9C%EC%95%BC%EA%B5%AC%20%EC%9A%B0%EC%B2%9C%20%EC%B7%A8%EC%86%8C",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 241,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-957",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 241,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-958",
+      "tagName": "em",
+      "text": "2",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 241,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-959",
+      "tagName": "strong",
+      "text": "프로야구 우천 취소",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_item"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1212,
+        "y": 241,
+        "width": 285,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_item",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-962",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EB%A6%AC%EB%B2%84%EC%8A%A4",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 277,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-963",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 277,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-964",
+      "tagName": "em",
+      "text": "3",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 277,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-965",
+      "tagName": "strong",
+      "text": "리버스",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_item"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1212,
+        "y": 277,
+        "width": 285,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_item",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-968",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%ED%99%8D%ED%95%B4%20%EC%A7%80%EB%8F%84",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 313,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-969",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 313,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-970",
+      "tagName": "em",
+      "text": "4",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 313,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-974",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%B0%B0%EB%8B%B9%EA%B8%88",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 349,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-975",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 349,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-976",
+      "tagName": "em",
+      "text": "5",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 349,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-980",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EC%BD%94%EB%A1%9C%EB%82%98%20%EC%9E%AC%EC%9C%A0%ED%96%89",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 385,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-981",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 385,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-982",
+      "tagName": "em",
+      "text": "6",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 385,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-986",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EC%82%B4%EB%AA%A9%EC%A7%80",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 421,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-987",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 421,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-988",
+      "tagName": "em",
+      "text": "7",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 421,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-989",
+      "tagName": "strong",
+      "text": "살목지",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_item"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1212,
+        "y": 421,
+        "width": 285,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_item",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-992",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EB%82%98%EC%86%94",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 457,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-993",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 457,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-994",
+      "tagName": "em",
+      "text": "8",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 457,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-995",
+      "tagName": "strong",
+      "text": "나솔",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_item"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1212,
+        "y": 457,
+        "width": 285,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_item",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer",
+        "noise_empty_leaf"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-998",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%ED%8F%89%EC%B0%BD%20%EB%8C%80%EA%B4%80%EB%A0%B9%20%EC%82%B0%EB%B6%88",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 493,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-999",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 493,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1000",
+      "tagName": "em",
+      "text": "9",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 493,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1004",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EB%AA%A8%EC%9E%90%EB%AC%B4%EC%8B%B8",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 529,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1005",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 529,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1006",
+      "tagName": "em",
+      "text": "10",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 529,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1007",
+      "tagName": "strong",
+      "text": "모자무싸",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_item"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1212,
+        "y": 529,
+        "width": 285,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_item",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    }
+  ],
+  "newlyVisibleNodes": [],
+  "changedNodes": [],
+  "deltaLabelNodes": [
+    {
+      "nodeId": "node-938",
+      "tagName": "div",
+      "text": "",
+      "role": "region",
+      "id": null,
+      "classList": [
+        "wrap_fold",
+        "comp_fold"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1160,
+        "y": 145,
+        "width": 384,
+        "height": 434
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_fold.comp_fold",
+      "group": "main",
+      "qualityScore": 6,
+      "qualityReasons": [
+        "has_role",
+        "multi_children",
+        "large_area"
+      ],
+      "focusScore": 4,
+      "focusReasons": [
+        "vis_large",
+        "vis_above_fold",
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-948",
+      "tagName": "ol",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "list_trendrank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1160,
+        "y": 205,
+        "width": 384,
+        "height": 374
+      },
+      "isVisible": true,
+      "selectorHint": "ol.list_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_large",
+        "vis_above_fold",
+        "vis_central",
+        "sem_structural",
+        "rich_children"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-949",
+      "tagName": "li",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "rolling",
+        "rolling_end"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 205,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "li.rolling.rolling_end",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 2,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "card",
+      "functionalCategoryCode": "CARD",
+      "functionalCategoryConfidence": 0.65,
+      "labelColor": "#6B4B2E",
+      "categoryReason": [
+        "tag=li with content"
+      ],
+      "labelScore": 4,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-950",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EC%95%88%ED%98%9C%EC%A7%84%20%EB%B0%B0%EA%B5%AC%EC%84%A0%EC%88%98",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 205,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-951",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 205,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-952",
+      "tagName": "em",
+      "text": "1",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 205,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-956",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%ED%94%84%EB%A1%9C%EC%95%BC%EA%B5%AC%20%EC%9A%B0%EC%B2%9C%20%EC%B7%A8%EC%86%8C",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 241,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-957",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 241,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-958",
+      "tagName": "em",
+      "text": "2",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 241,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-959",
+      "tagName": "strong",
+      "text": "프로야구 우천 취소",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_item"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1212,
+        "y": 241,
+        "width": 285,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_item",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-962",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EB%A6%AC%EB%B2%84%EC%8A%A4",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 277,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-963",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 277,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-964",
+      "tagName": "em",
+      "text": "3",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 277,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-965",
+      "tagName": "strong",
+      "text": "리버스",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_item"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1212,
+        "y": 277,
+        "width": 285,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_item",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-968",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%ED%99%8D%ED%95%B4%20%EC%A7%80%EB%8F%84",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 313,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-969",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 313,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-970",
+      "tagName": "em",
+      "text": "4",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 313,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-974",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%B0%B0%EB%8B%B9%EA%B8%88",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 349,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-975",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 349,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-976",
+      "tagName": "em",
+      "text": "5",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 349,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-980",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EC%BD%94%EB%A1%9C%EB%82%98%20%EC%9E%AC%EC%9C%A0%ED%96%89",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 385,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-981",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 385,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-982",
+      "tagName": "em",
+      "text": "6",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 385,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-986",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EC%82%B4%EB%AA%A9%EC%A7%80",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 421,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-987",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 421,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-988",
+      "tagName": "em",
+      "text": "7",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 421,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-989",
+      "tagName": "strong",
+      "text": "살목지",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_item"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1212,
+        "y": 421,
+        "width": 285,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_item",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-992",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EB%82%98%EC%86%94",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 457,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-993",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 457,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-994",
+      "tagName": "em",
+      "text": "8",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 457,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-995",
+      "tagName": "strong",
+      "text": "나솔",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_item"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1212,
+        "y": 457,
+        "width": 285,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_item",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 1,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer",
+        "noise_empty_leaf"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-998",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%ED%8F%89%EC%B0%BD%20%EB%8C%80%EA%B4%80%EB%A0%B9%20%EC%82%B0%EB%B6%88",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 493,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-999",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 493,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1000",
+      "tagName": "em",
+      "text": "9",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 493,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1004",
+      "tagName": "a",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "link_trendrank"
+      ],
+      "href": "https://search.daum.net/search?w=tot&DA=RT1&rtmaxcoll=AIO,NNS,DNS&q=%EB%AA%A8%EC%9E%90%EB%AC%B4%EC%8B%B8",
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 529,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "a.link_trendrank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 6,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "sem_interactive",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "link",
+      "functionalCategoryCode": "LINK",
+      "functionalCategoryConfidence": 0.85,
+      "labelColor": "#0BC5EA",
+      "categoryReason": [
+        "tag=a[href]"
+      ],
+      "labelScore": 6,
+      "labelEligible": true,
+      "labelDropReason": null
+    },
+    {
+      "nodeId": "node-1005",
+      "tagName": "div",
+      "text": "",
+      "role": null,
+      "id": null,
+      "classList": [
+        "wrap_cont"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 529,
+        "width": 352,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "div.wrap_cont",
+      "group": "main",
+      "qualityScore": 3,
+      "qualityReasons": [
+        "pointer_cursor",
+        "multi_children",
+        "medium_area",
+        "duplicate_bbox_parent"
+      ],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -3,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-3 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1006",
+      "tagName": "em",
+      "text": "10",
+      "role": null,
+      "id": null,
+      "classList": [
+        "num_rank"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1176,
+        "y": 529,
+        "width": 36,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "em.num_rank",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 3,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": -1,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=-1 < threshold=2 (mode=dense)"
+    },
+    {
+      "nodeId": "node-1007",
+      "tagName": "strong",
+      "text": "모자무싸",
+      "role": null,
+      "id": null,
+      "classList": [
+        "tit_item"
+      ],
+      "href": null,
+      "type": null,
+      "bbox": {
+        "x": 1212,
+        "y": 529,
+        "width": 285,
+        "height": 26
+      },
+      "isVisible": true,
+      "selectorHint": "strong.tit_item",
+      "group": "main",
+      "qualityScore": null,
+      "qualityReasons": [],
+      "focusScore": 4,
+      "focusReasons": [
+        "vis_above_fold",
+        "vis_central",
+        "has_text",
+        "int_pointer"
+      ],
+      "visibility": {
+        "visuallyVisible": true,
+        "accessibilityVisible": true,
+        "interactiveVisible": true,
+        "ariaHiddenValue": null,
+        "hiddenByAncestorAria": false,
+        "hiddenByCss": false,
+        "blockedByOverlay": false,
+        "isInert": false,
+        "visibilityReasons": []
+      },
+      "functionalCategory": "unknown",
+      "functionalCategoryCode": "?",
+      "functionalCategoryConfidence": 0.1,
+      "labelColor": "#718096",
+      "categoryReason": [
+        "no matching rule"
+      ],
+      "labelScore": 0,
+      "labelEligible": false,
+      "labelDropReason": "labelScore=0 < threshold=2 (mode=dense)"
+    }
+  ],
+  "unchangedNodesCount": 812,
+  "deltaLabelNodesCount": 38,
+  "backgroundNoiseCount": 3,
+  "newRegions": [
+    {
+      "x": 1160,
+      "y": 145,
+      "width": 384,
+      "height": 434,
+      "nodeId": "node-938",
+      "tagName": "div",
+      "text": ""
+    },
+    {
+      "x": 1160,
+      "y": 205,
+      "width": 384,
+      "height": 374,
+      "nodeId": "node-948",
+      "tagName": "ol",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 205,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-949",
+      "tagName": "li",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 205,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-950",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 205,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-951",
+      "tagName": "div",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 205,
+      "width": 36,
+      "height": 26,
+      "nodeId": "node-952",
+      "tagName": "em",
+      "text": "1"
+    },
+    {
+      "x": 1176,
+      "y": 241,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-956",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 241,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-957",
+      "tagName": "div",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 241,
+      "width": 36,
+      "height": 26,
+      "nodeId": "node-958",
+      "tagName": "em",
+      "text": "2"
+    },
+    {
+      "x": 1212,
+      "y": 241,
+      "width": 285,
+      "height": 26,
+      "nodeId": "node-959",
+      "tagName": "strong",
+      "text": "프로야구 우천 취소"
+    },
+    {
+      "x": 1176,
+      "y": 277,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-962",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 277,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-963",
+      "tagName": "div",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 277,
+      "width": 36,
+      "height": 26,
+      "nodeId": "node-964",
+      "tagName": "em",
+      "text": "3"
+    },
+    {
+      "x": 1212,
+      "y": 277,
+      "width": 285,
+      "height": 26,
+      "nodeId": "node-965",
+      "tagName": "strong",
+      "text": "리버스"
+    },
+    {
+      "x": 1176,
+      "y": 313,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-968",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 313,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-969",
+      "tagName": "div",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 313,
+      "width": 36,
+      "height": 26,
+      "nodeId": "node-970",
+      "tagName": "em",
+      "text": "4"
+    },
+    {
+      "x": 1176,
+      "y": 349,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-974",
+      "tagName": "a",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 349,
+      "width": 352,
+      "height": 26,
+      "nodeId": "node-975",
+      "tagName": "div",
+      "text": ""
+    },
+    {
+      "x": 1176,
+      "y": 349,
+      "width": 36,
+      "height": 26,
+      "nodeId": "node-976",
+      "tagName": "em",
+      "text": "5"
+    }
+  ],
+  "summary": "Detected 38 new node(s) and 12 mutation(s).",
+  "startedAt": "2026-04-17T09:38:25.742Z",
+  "finishedAt": "2026-04-17T09:38:36.062Z",
+  "durationMs": 10320,
+  "workerSlot": 2
+}

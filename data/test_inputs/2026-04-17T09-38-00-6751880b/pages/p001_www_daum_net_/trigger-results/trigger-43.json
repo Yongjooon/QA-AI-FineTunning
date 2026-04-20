@@ -1,0 +1,36 @@
+{
+  "triggerId": "trigger-43",
+  "action": "click",
+  "status": "success",
+  "screenshotMode": "changedRegion",
+  "beforeScreenshot": null,
+  "afterScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-43-after.png",
+  "annotatedScreenshot": "outputs/p001_www_daum_net_/trigger-results/trigger-43-annotated.png",
+  "diffDebug": "outputs/p001_www_daum_net_/trigger-results/trigger-43-diff-debug.json",
+  "mutationCount": 1,
+  "mutations": [
+    {
+      "type": "attributes",
+      "targetTag": "button",
+      "targetId": null,
+      "targetClass": "btn_help",
+      "addedNodes": [],
+      "removedNodes": [],
+      "attributeName": "aria-expanded",
+      "oldValue": null
+    }
+  ],
+  "newNodes": [],
+  "newlyVisibleNodes": [],
+  "changedNodes": [],
+  "deltaLabelNodes": [],
+  "unchangedNodesCount": 813,
+  "deltaLabelNodesCount": 0,
+  "backgroundNoiseCount": 1,
+  "newRegions": [],
+  "summary": "Detected 1 mutation(s).",
+  "startedAt": "2026-04-17T09:38:59.499Z",
+  "finishedAt": "2026-04-17T09:39:09.485Z",
+  "durationMs": 9986,
+  "workerSlot": 2
+}
