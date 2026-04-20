@@ -2,14 +2,16 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
+import random
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
 import torch
 from datasets import Dataset
-from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+from peft import LoraConfig, PeftModel, get_peft_model, prepare_model_for_kbit_training
 from transformers import (
     AutoModelForCausalLM,
     AutoProcessor,
@@ -20,7 +22,7 @@ from transformers import (
     TrainingArguments,
 )
 
-from qafinetune.io_utils import find_latest_checkpoint, load_training_records_from_dir, load_training_records_from_zip
+from qafinetune.io_utils import load_training_records_from_dir, load_training_records_from_zip
 from qafinetune.runtime import detect_runtime, ensure_dir, load_json, save_json, setup_logging, suggest_training_preset, utc_timestamp
 
 
@@ -47,13 +49,14 @@ class RunPaths:
     run_state_path: Path
     trainer_metrics_path: Path
     latest_run_pointer_path: Path
+    chunk_history_path: Path
 
 
 class RunStateCallback(TrainerCallback):
-    def __init__(self, run_state_path: Path, metrics_path: Path, checkpoints_dir: Path) -> None:
+    def __init__(self, run_state_path: Path, metrics_path: Path, checkpoint_dir: Path) -> None:
         self.run_state_path = run_state_path
         self.metrics_path = metrics_path
-        self.checkpoints_dir = checkpoints_dir
+        self.checkpoint_dir = checkpoint_dir
 
     def _write_state(self, payload: dict[str, Any]) -> None:
         existing = load_json(self.run_state_path) or {}
@@ -61,13 +64,7 @@ class RunStateCallback(TrainerCallback):
         save_json(self.run_state_path, existing)
 
     def on_train_begin(self, args, state, control, **kwargs):
-        self._write_state(
-            {
-                "status": "running",
-                "global_step": state.global_step,
-                "epoch": state.epoch,
-            }
-        )
+        self._write_state({"status": "running", "global_step": state.global_step, "epoch": state.epoch})
 
     def on_log(self, args, state, control, logs=None, **kwargs):
         if logs is None:
@@ -76,24 +73,22 @@ class RunStateCallback(TrainerCallback):
             handle.write(json.dumps({"step": state.global_step, "epoch": state.epoch, **logs}, ensure_ascii=False) + "\n")
 
     def on_save(self, args, state, control, **kwargs):
-        latest_checkpoint = find_latest_checkpoint(self.checkpoints_dir)
         self._write_state(
             {
                 "status": "running",
                 "global_step": state.global_step,
                 "epoch": state.epoch,
-                "latest_checkpoint": str(latest_checkpoint) if latest_checkpoint else None,
+                "latest_checkpoint": str(self.checkpoint_dir),
             }
         )
 
     def on_train_end(self, args, state, control, **kwargs):
-        latest_checkpoint = find_latest_checkpoint(self.checkpoints_dir)
         self._write_state(
             {
-                "status": "completed",
+                "status": "running",
                 "global_step": state.global_step,
                 "epoch": state.epoch,
-                "latest_checkpoint": str(latest_checkpoint) if latest_checkpoint else None,
+                "latest_checkpoint": str(self.checkpoint_dir),
             }
         )
 
@@ -120,6 +115,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--lora_alpha", type=int, default=0)
     parser.add_argument("--lora_dropout", type=float, default=0.05)
     parser.add_argument("--max_train_samples", type=int, default=0)
+    parser.add_argument("--chunk_size", type=int, default=8)
+    parser.add_argument("--replay_ratio", type=float, default=0.5)
+    parser.add_argument("--gpu_max_memory_gb", type=int, default=7)
+    parser.add_argument("--cpu_max_memory_gb", type=int, default=48)
     parser.add_argument("--seed", type=int, default=42)
     return parser.parse_args()
 
@@ -144,6 +143,7 @@ def resolve_run_paths(output_root: str | Path, run_name: str) -> RunPaths:
         run_state_path=run_dir / "run_state.json",
         trainer_metrics_path=logs_dir / "trainer_metrics.jsonl",
         latest_run_pointer_path=latest_pointer_path,
+        chunk_history_path=logs_dir / "chunk_history.jsonl",
     )
 
 
@@ -181,22 +181,23 @@ def resolve_text_backend(processor):
 
 
 def tokenize_records(dataset: Dataset, processor, text_backend, max_seq_length: int) -> Dataset:
-
     def _tokenize(example: dict[str, Any]) -> dict[str, Any]:
         text = format_messages_for_training(processor, example)
-        tokens = text_backend(
-            text,
-            truncation=True,
-            max_length=max_seq_length,
-            padding=False,
-        )
+        tokens = text_backend(text, truncation=True, max_length=max_seq_length, padding=False)
         tokens["labels"] = list(tokens["input_ids"])
         return tokens
 
     return dataset.map(_tokenize, remove_columns=dataset.column_names)
 
 
-def load_model_and_processor(model_name: str, bf16: bool, runtime_profile: dict[str, Any], offload_dir: Path):
+def load_model_and_processor(
+    model_name: str,
+    bf16: bool,
+    runtime_profile: dict[str, Any],
+    offload_dir: Path,
+    gpu_max_memory_gb: int,
+    cpu_max_memory_gb: int,
+):
     compute_dtype = torch.bfloat16 if bf16 else torch.float16
     processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
     text_backend = resolve_text_backend(processor)
@@ -206,6 +207,7 @@ def load_model_and_processor(model_name: str, bf16: bool, runtime_profile: dict[
         bnb_4bit_quant_type="nf4",
         bnb_4bit_use_double_quant=True,
         bnb_4bit_compute_dtype=compute_dtype,
+        llm_int8_enable_fp32_cpu_offload=True,
     )
     load_kwargs: dict[str, Any] = {
         "device_map": "auto",
@@ -216,8 +218,7 @@ def load_model_and_processor(model_name: str, bf16: bool, runtime_profile: dict[
     }
     if runtime_profile.get("gpu_memory_gb", 0) <= 16:
         ensure_dir(offload_dir)
-        gpu_budget_gb = max(10, int(runtime_profile["gpu_memory_gb"]) - 3)
-        load_kwargs["max_memory"] = {0: f"{gpu_budget_gb}GiB", "cpu": "48GiB"}
+        load_kwargs["max_memory"] = {0: f"{gpu_max_memory_gb}GiB", "cpu": f"{cpu_max_memory_gb}GiB"}
         load_kwargs["low_cpu_mem_usage"] = True
         load_kwargs["offload_folder"] = str(offload_dir)
 
@@ -228,19 +229,75 @@ def load_model_and_processor(model_name: str, bf16: bool, runtime_profile: dict[
     return model, processor, text_backend
 
 
-def resolve_resume_checkpoint(args: argparse.Namespace, run_paths: RunPaths) -> str | None:
-    if args.resume_mode == "never":
-        return None
-    if args.resume_mode == "path":
-        return args.resume_checkpoint or None
+def build_chunk_passes(record_count: int, chunk_size: int, num_train_epochs: float) -> list[dict[str, Any]]:
+    if chunk_size <= 0 or chunk_size >= record_count:
+        return [{"cycle_index": 0, "chunk_index": 0, "start": 0, "end": record_count, "epoch_fraction": num_train_epochs}]
 
-    state_payload = load_json(run_paths.run_state_path) or {}
-    checkpoint_from_state = state_payload.get("latest_checkpoint")
-    if checkpoint_from_state and Path(checkpoint_from_state).exists():
-        return checkpoint_from_state
+    chunk_bounds = [(start, min(record_count, start + chunk_size)) for start in range(0, record_count, chunk_size)]
+    passes: list[dict[str, Any]] = []
+    full_cycles = int(math.floor(num_train_epochs))
+    fractional_cycle = num_train_epochs - full_cycles
 
-    latest_checkpoint = find_latest_checkpoint(run_paths.checkpoints_dir)
-    return str(latest_checkpoint) if latest_checkpoint else None
+    for cycle_index in range(full_cycles):
+        for chunk_index, (start, end) in enumerate(chunk_bounds):
+            passes.append(
+                {
+                    "cycle_index": cycle_index,
+                    "chunk_index": chunk_index,
+                    "start": start,
+                    "end": end,
+                    "epoch_fraction": 1.0,
+                }
+            )
+
+    if fractional_cycle > 0:
+        for chunk_index, (start, end) in enumerate(chunk_bounds):
+            passes.append(
+                {
+                    "cycle_index": full_cycles,
+                    "chunk_index": chunk_index,
+                    "start": start,
+                    "end": end,
+                    "epoch_fraction": fractional_cycle,
+                }
+            )
+
+    return passes
+
+
+def build_chunk_subset(
+    shuffled_records: list[dict[str, Any]],
+    chunk_pass: dict[str, Any],
+    completed_passes: list[dict[str, Any]],
+    replay_ratio: float,
+    seed: int,
+) -> list[dict[str, Any]]:
+    current_records = shuffled_records[chunk_pass["start"] : chunk_pass["end"]]
+    if replay_ratio <= 0 or not completed_passes:
+        return list(current_records)
+
+    replay_candidates: list[int] = []
+    for previous in completed_passes:
+        if previous["cycle_index"] < chunk_pass["cycle_index"] or (
+            previous["cycle_index"] == chunk_pass["cycle_index"] and previous["chunk_index"] < chunk_pass["chunk_index"]
+        ):
+            replay_candidates.extend(range(previous["start"], previous["end"]))
+
+    if not replay_candidates:
+        return list(current_records)
+
+    replay_target = max(1, int(math.ceil(len(current_records) * replay_ratio)))
+    rng = random.Random(seed + chunk_pass["cycle_index"] * 10_000 + chunk_pass["chunk_index"])
+    sampled_indices = rng.sample(replay_candidates, k=min(replay_target, len(replay_candidates)))
+    merged_records = [shuffled_records[index] for index in sampled_indices] + list(current_records)
+    rng.shuffle(merged_records)
+    return merged_records
+
+
+def append_jsonl(path: Path, payload: dict[str, Any]) -> None:
+    ensure_dir(path.parent)
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(payload, ensure_ascii=False) + "\n")
 
 
 def main() -> None:
@@ -284,13 +341,28 @@ def main() -> None:
         raise RuntimeError("No valid training records were found in the provided training source.")
 
     logger.info("Loaded %s valid training records", len(records))
+    shuffled_records = list(records)
+    random.Random(args.seed).shuffle(shuffled_records)
+    chunk_passes = build_chunk_passes(len(shuffled_records), args.chunk_size, args.num_train_epochs)
+    completed_chunk_passes = int(previous_state.get("completed_chunk_passes", 0))
+    completed_pass_meta = chunk_passes[:completed_chunk_passes]
 
-    dataset = Dataset.from_list(records)
+    logger.info(
+        "Chunked training plan: %s passes, chunk_size=%s, replay_ratio=%.2f, gpu_max_memory=%sGiB, cpu_max_memory=%sGiB",
+        len(chunk_passes),
+        args.chunk_size,
+        args.replay_ratio,
+        args.gpu_max_memory_gb,
+        args.cpu_max_memory_gb,
+    )
+
     model, processor, text_backend = load_model_and_processor(
         args.model_name,
         preset["bf16"],
         runtime_profile,
         run_paths.run_dir / "offload",
+        args.gpu_max_memory_gb,
+        args.cpu_max_memory_gb,
     )
 
     lora_config = LoraConfig(
@@ -301,40 +373,13 @@ def main() -> None:
         bias="none",
         task_type="CAUSAL_LM",
     )
-    model = get_peft_model(model, lora_config)
-    model.print_trainable_parameters()
 
-    tokenized_dataset = tokenize_records(dataset, processor, text_backend, args.max_seq_length)
-    data_collator = DataCollatorForLanguageModeling(tokenizer=text_backend, mlm=False)
-
-    training_arguments = TrainingArguments(
-        output_dir=str(run_paths.checkpoints_dir),
-        overwrite_output_dir=False,
-        num_train_epochs=args.num_train_epochs,
-        per_device_train_batch_size=args.per_device_train_batch_size,
-        gradient_accumulation_steps=args.gradient_accumulation_steps,
-        learning_rate=args.learning_rate,
-        weight_decay=args.weight_decay,
-        warmup_ratio=args.warmup_ratio,
-        logging_steps=args.logging_steps,
-        save_steps=args.save_steps,
-        save_total_limit=args.save_total_limit,
-        bf16=preset["bf16"],
-        fp16=preset["fp16"],
-        dataloader_num_workers=2,
-        report_to=[],
-        seed=args.seed,
-        optim="paged_adamw_8bit",
-        lr_scheduler_type="cosine",
-        max_grad_norm=0.3,
-        remove_unused_columns=False,
-    )
-
-    resume_checkpoint = resolve_resume_checkpoint(args, run_paths)
-    if resume_checkpoint:
-        logger.info("Resuming from checkpoint: %s", resume_checkpoint)
+    if completed_chunk_passes > 0 and (run_paths.final_model_dir / "adapter_model.safetensors").exists():
+        logger.info("Reloading adapter from %s", run_paths.final_model_dir)
+        model = PeftModel.from_pretrained(model, str(run_paths.final_model_dir), is_trainable=True)
     else:
-        logger.info("Starting a fresh training run")
+        model = get_peft_model(model, lora_config)
+    model.print_trainable_parameters()
 
     run_state_seed = {
         **previous_state,
@@ -345,48 +390,148 @@ def main() -> None:
         "model_name": args.model_name,
         "train_source": str(train_source_path.resolve()),
         "resume_mode": args.resume_mode,
-        "resume_checkpoint": resume_checkpoint,
+        "resume_checkpoint": str(run_paths.final_model_dir) if completed_chunk_passes > 0 else None,
         "max_seq_length": args.max_seq_length,
         "per_device_train_batch_size": args.per_device_train_batch_size,
         "gradient_accumulation_steps": args.gradient_accumulation_steps,
         "num_train_epochs": args.num_train_epochs,
+        "chunk_size": args.chunk_size,
+        "replay_ratio": args.replay_ratio,
+        "completed_chunk_passes": completed_chunk_passes,
+        "total_chunk_passes": len(chunk_passes),
+        "gpu_max_memory_gb": args.gpu_max_memory_gb,
+        "cpu_max_memory_gb": args.cpu_max_memory_gb,
     }
     save_json(run_paths.run_state_path, run_state_seed)
     save_json(run_paths.latest_run_pointer_path, run_state_seed | {"run_state_path": str(run_paths.run_state_path)})
 
-    trainer = Trainer(
-        model=model,
-        args=training_arguments,
-        train_dataset=tokenized_dataset,
-        tokenizer=text_backend,
-        data_collator=data_collator,
-        callbacks=[RunStateCallback(run_paths.run_state_path, run_paths.trainer_metrics_path, run_paths.checkpoints_dir)],
-    )
+    data_collator = DataCollatorForLanguageModeling(tokenizer=text_backend, mlm=False)
 
-    try:
-        trainer.train(resume_from_checkpoint=resume_checkpoint)
-    except KeyboardInterrupt:
-        latest_checkpoint = find_latest_checkpoint(run_paths.checkpoints_dir)
+    for pass_index, chunk_pass in enumerate(chunk_passes):
+        if pass_index < completed_chunk_passes:
+            continue
+
+        chunk_records = build_chunk_subset(shuffled_records, chunk_pass, completed_pass_meta, args.replay_ratio, args.seed)
+        tokenized_dataset = tokenize_records(Dataset.from_list(chunk_records), processor, text_backend, args.max_seq_length)
+        pass_dir = ensure_dir(run_paths.checkpoints_dir / f"pass-{pass_index + 1:03d}")
+
+        logger.info(
+            "Starting chunk pass %s/%s (cycle=%s chunk=%s records=%s epoch_fraction=%.3f)",
+            pass_index + 1,
+            len(chunk_passes),
+            chunk_pass["cycle_index"] + 1,
+            chunk_pass["chunk_index"] + 1,
+            len(chunk_records),
+            chunk_pass["epoch_fraction"],
+        )
+
         save_json(
             run_paths.run_state_path,
             {
                 **(load_json(run_paths.run_state_path) or {}),
-                "status": "interrupted",
-                "latest_checkpoint": str(latest_checkpoint) if latest_checkpoint else None,
+                "status": "running",
+                "active_cycle_index": chunk_pass["cycle_index"],
+                "active_chunk_index": chunk_pass["chunk_index"],
+                "completed_chunk_passes": pass_index,
+                "current_chunk_record_count": len(chunk_records),
+                "latest_checkpoint": str(pass_dir),
             },
         )
-        logger.warning("Training was interrupted. Latest checkpoint: %s", latest_checkpoint)
-        raise
 
-    trainer.save_model(str(run_paths.final_model_dir))
-    processor.save_pretrained(str(run_paths.final_model_dir))
+        training_arguments = TrainingArguments(
+            output_dir=str(pass_dir),
+            overwrite_output_dir=True,
+            num_train_epochs=chunk_pass["epoch_fraction"],
+            per_device_train_batch_size=args.per_device_train_batch_size,
+            gradient_accumulation_steps=args.gradient_accumulation_steps,
+            learning_rate=args.learning_rate,
+            weight_decay=args.weight_decay,
+            warmup_ratio=args.warmup_ratio,
+            logging_steps=max(1, min(args.logging_steps, len(tokenized_dataset))),
+            save_steps=max(1, len(tokenized_dataset)),
+            save_total_limit=1,
+            bf16=preset["bf16"],
+            fp16=preset["fp16"],
+            dataloader_num_workers=0,
+            dataloader_pin_memory=False,
+            report_to=[],
+            seed=args.seed + pass_index,
+            optim="paged_adamw_8bit",
+            lr_scheduler_type="cosine",
+            max_grad_norm=0.3,
+            remove_unused_columns=False,
+            disable_tqdm=False,
+            torch_empty_cache_steps=1,
+        )
 
-    latest_checkpoint = find_latest_checkpoint(run_paths.checkpoints_dir)
+        trainer = Trainer(
+            model=model,
+            args=training_arguments,
+            train_dataset=tokenized_dataset,
+            tokenizer=text_backend,
+            data_collator=data_collator,
+            callbacks=[RunStateCallback(run_paths.run_state_path, run_paths.trainer_metrics_path, pass_dir)],
+        )
+
+        try:
+            trainer.train()
+        except KeyboardInterrupt:
+            trainer.save_model(str(run_paths.final_model_dir))
+            processor.save_pretrained(str(run_paths.final_model_dir))
+            save_json(
+                run_paths.run_state_path,
+                {
+                    **(load_json(run_paths.run_state_path) or {}),
+                    "status": "interrupted",
+                    "latest_checkpoint": str(pass_dir),
+                    "completed_chunk_passes": pass_index,
+                },
+            )
+            logger.warning("Training interrupted during chunk pass %s", pass_index + 1)
+            raise
+
+        trainer.save_model(str(pass_dir))
+        trainer.save_model(str(run_paths.final_model_dir))
+        processor.save_pretrained(str(pass_dir))
+        processor.save_pretrained(str(run_paths.final_model_dir))
+        completed_pass_meta.append(chunk_pass)
+
+        append_jsonl(
+            run_paths.chunk_history_path,
+            {
+                "pass_index": pass_index + 1,
+                "cycle_index": chunk_pass["cycle_index"],
+                "chunk_index": chunk_pass["chunk_index"],
+                "start": chunk_pass["start"],
+                "end": chunk_pass["end"],
+                "record_count": len(chunk_records),
+                "epoch_fraction": chunk_pass["epoch_fraction"],
+            },
+        )
+        save_json(
+            run_paths.run_state_path,
+            {
+                **(load_json(run_paths.run_state_path) or {}),
+                "status": "running",
+                "completed_chunk_passes": pass_index + 1,
+                "latest_checkpoint": str(pass_dir),
+                "final_model_dir": str(run_paths.final_model_dir),
+            },
+        )
+        save_json(
+            run_paths.latest_run_pointer_path,
+            (load_json(run_paths.run_state_path) or {}) | {"run_state_path": str(run_paths.run_state_path)},
+        )
+
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+
     final_state = {
         **(load_json(run_paths.run_state_path) or {}),
         "status": "completed",
-        "latest_checkpoint": str(latest_checkpoint) if latest_checkpoint else None,
+        "latest_checkpoint": str(run_paths.checkpoints_dir / f"pass-{len(chunk_passes):03d}") if chunk_passes else None,
         "final_model_dir": str(run_paths.final_model_dir),
+        "completed_chunk_passes": len(chunk_passes),
     }
     save_json(run_paths.run_state_path, final_state)
     save_json(run_paths.latest_run_pointer_path, final_state | {"run_state_path": str(run_paths.run_state_path)})
