@@ -469,7 +469,6 @@ def main() -> None:
 
         training_arguments = TrainingArguments(
             output_dir=str(pass_dir),
-            overwrite_output_dir=True,
             num_train_epochs=chunk_pass["epoch_fraction"],
             per_device_train_batch_size=args.per_device_train_batch_size,
             gradient_accumulation_steps=args.gradient_accumulation_steps,
