@@ -8,14 +8,14 @@ from typing import Any
 
 import torch
 from peft import PeftModel
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from transformers import AutoModelForImageTextToText, AutoProcessor, BitsAndBytesConfig
 
 from qafinetune.io_utils import build_generation_prompt_from_zip, extract_tagged_sections
 from qafinetune.runtime import detect_runtime, ensure_dir, save_json, setup_logging, utc_timestamp
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate QA scenarios from a fine-tuned Gemma-family model.")
+    parser = argparse.ArgumentParser(description="Generate QA scenarios from a fine-tuned Gemma 4 model.")
     parser.add_argument("--model_name", required=True)
     parser.add_argument("--adapter_path", required=True)
     parser.add_argument("--input_zip", required=True)
@@ -31,7 +31,7 @@ def resolve_output_paths(output_root: str | Path, run_name: str) -> dict[str, Pa
     base_root = ensure_dir(output_root)
     resolved_run_name = run_name or f"generate_{utc_timestamp()}"
     run_dir = ensure_dir(base_root / "generated_runs" / resolved_run_name)
-    paths = {
+    return {
         "run_dir": run_dir,
         "extract_dir": ensure_dir(run_dir / "extracted_input"),
         "logs_dir": ensure_dir(run_dir / "logs"),
@@ -42,14 +42,24 @@ def resolve_output_paths(output_root: str | Path, run_name: str) -> dict[str, Pa
         "input_profile_path": run_dir / "input_profile.json",
         "generation_meta_path": run_dir / "generation_meta.json",
     }
-    return paths
+
+
+def load_processor(adapter_path: str, model_name: str):
+    try:
+        processor = AutoProcessor.from_pretrained(adapter_path, trust_remote_code=True)
+    except Exception:
+        processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
+
+    tokenizer = processor.tokenizer
+    tokenizer.padding_side = "left"
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+    return processor
 
 
 def load_base_and_adapter(model_name: str, adapter_path: str, bf16: bool):
     compute_dtype = torch.bfloat16 if bf16 else torch.float16
-    tokenizer = AutoTokenizer.from_pretrained(adapter_path, trust_remote_code=True)
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
+    processor = load_processor(adapter_path, model_name)
 
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,
@@ -58,7 +68,7 @@ def load_base_and_adapter(model_name: str, adapter_path: str, bf16: bool):
         bnb_4bit_compute_dtype=compute_dtype,
     )
 
-    base_model = AutoModelForCausalLM.from_pretrained(
+    base_model = AutoModelForImageTextToText.from_pretrained(
         model_name,
         device_map="auto",
         torch_dtype=compute_dtype,
@@ -68,18 +78,18 @@ def load_base_and_adapter(model_name: str, adapter_path: str, bf16: bool):
     )
     model = PeftModel.from_pretrained(base_model, adapter_path)
     model.eval()
-    return model, tokenizer
+    return model, processor
 
 
-def build_messages(prompt: str) -> list[dict[str, str]]:
+def build_messages(prompt: str) -> list[dict[str, Any]]:
     system_prompt = (
         "You generate QA test scenarios.\n"
         "Always produce both a human-readable scenario summary and a strict Playwright JSON output.\n"
         "Do not omit the required tags."
     )
     return [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": prompt},
+        {"role": "system", "content": [{"type": "text", "text": system_prompt}]},
+        {"role": "user", "content": [{"type": "text", "text": prompt}]},
     ]
 
 
@@ -102,23 +112,36 @@ def main() -> None:
     prompt, input_profile = build_generation_prompt_from_zip(args.input_zip, output_paths["extract_dir"])
     save_json(output_paths["input_profile_path"], input_profile)
 
-    model, tokenizer = load_base_and_adapter(
+    model, processor = load_base_and_adapter(
         model_name=args.model_name,
         adapter_path=args.adapter_path,
         bf16=runtime_profile["bf16_supported"],
     )
+    tokenizer = processor.tokenizer
 
     messages = build_messages(prompt)
     try:
-        serialized_prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        inputs = processor.apply_chat_template(
+            messages,
+            tokenize=True,
+            return_dict=True,
+            return_tensors="pt",
+            add_generation_prompt=True,
+        )
     except Exception:
-        serialized_prompt = (
+        fallback_prompt = (
             "System:\n"
             "Generate a QA scenario summary and strict Playwright JSON.\n\n"
             f"User:\n{prompt}\n\nAssistant:\n"
         )
+        inputs = tokenizer(fallback_prompt, return_tensors="pt")
 
-    inputs = tokenizer(serialized_prompt, return_tensors="pt").to(model.device)
+    model_device = next(model.parameters()).device
+    inputs = {
+        key: value.to(model_device) if hasattr(value, "to") else value
+        for key, value in inputs.items()
+    }
+
     logger.info("Starting generation")
     with torch.no_grad():
         generated = model.generate(

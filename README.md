@@ -1,6 +1,6 @@
 # QA-AI-FineTunning
 
-Colab-first project structure for fine-tuning a Gemma-family model to generate QA test scenarios.
+Colab-first project structure for fine-tuning a Gemma 4 model to generate QA test scenarios.
 
 ## VS Code + Colab
 
@@ -75,5 +75,10 @@ The script will look up the latest checkpoint from the saved run state.
 
 ## Note about the base model
 
-The notebooks expose `MODEL_NAME` as a parameter so you can point at the exact Gemma checkpoint you want to fine-tune in Colab.
-If your intended Gemma model requires gated access, log in to Hugging Face inside Colab before training.
+The notebooks default to `google/gemma-4-E2B-it`, which is the most practical Gemma 4 option for a T4-backed Colab runtime.
+Gemma 4 support requires a newer Transformers release than older Gemma notebooks, so `requirements-colab.txt` now pins a higher minimum version.
+
+## Optional monitoring
+
+The training notebook includes an optional Smankusors Colab Monitor cell.
+It is disabled by default because it executes a third-party remote script with `exec()`.

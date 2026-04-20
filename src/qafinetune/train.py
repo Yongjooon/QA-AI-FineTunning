@@ -11,8 +11,8 @@ import torch
 from datasets import Dataset
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from transformers import (
-    AutoModelForCausalLM,
-    AutoTokenizer,
+    AutoModelForImageTextToText,
+    AutoProcessor,
     BitsAndBytesConfig,
     DataCollatorForLanguageModeling,
     Trainer,
@@ -99,7 +99,7 @@ class RunStateCallback(TrainerCallback):
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Fine-tune a Gemma-family model on QA scenario data.")
+    parser = argparse.ArgumentParser(description="Fine-tune a Gemma 4 model on QA scenario data.")
     parser.add_argument("--model_name", required=True)
     parser.add_argument("--train_zip", required=True)
     parser.add_argument("--output_root", required=True)
@@ -147,25 +147,33 @@ def resolve_run_paths(output_root: str | Path, run_name: str) -> RunPaths:
     )
 
 
-def format_messages_for_training(tokenizer, example: dict[str, Any]) -> str:
+def _typed_text_message(role: str, text: str) -> dict[str, Any]:
+    return {"role": role, "content": [{"type": "text", "text": text}]}
+
+
+def format_messages_for_training(processor, example: dict[str, Any]) -> str:
     messages = example["messages"]
     if not messages:
         messages = [
-            {"role": "user", "content": example["prompt"]},
-            {"role": "assistant", "content": example["response"]},
+            _typed_text_message("user", example["prompt"]),
+            _typed_text_message("assistant", example["response"]),
         ]
+    else:
+        messages = [_typed_text_message(item["role"], item["content"]) for item in messages]
 
     try:
-        return tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=False)
+        return processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=False)
     except Exception:
         prompt = example["prompt"].strip()
         response = example["response"].strip()
         return f"User:\n{prompt}\n\nAssistant:\n{response}"
 
 
-def tokenize_records(dataset: Dataset, tokenizer, max_seq_length: int) -> Dataset:
+def tokenize_records(dataset: Dataset, processor, max_seq_length: int) -> Dataset:
+    tokenizer = processor.tokenizer
+
     def _tokenize(example: dict[str, Any]) -> dict[str, Any]:
-        text = format_messages_for_training(tokenizer, example)
+        text = format_messages_for_training(processor, example)
         tokens = tokenizer(
             text,
             truncation=True,
@@ -178,18 +186,21 @@ def tokenize_records(dataset: Dataset, tokenizer, max_seq_length: int) -> Datase
     return dataset.map(_tokenize, remove_columns=dataset.column_names)
 
 
-def load_model_and_tokenizer(model_name: str, bf16: bool):
+def load_model_and_processor(model_name: str, bf16: bool):
     compute_dtype = torch.bfloat16 if bf16 else torch.float16
-    tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+    processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
+    tokenizer = processor.tokenizer
+    tokenizer.padding_side = "right"
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
+
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
         bnb_4bit_use_double_quant=True,
         bnb_4bit_compute_dtype=compute_dtype,
     )
-    model = AutoModelForCausalLM.from_pretrained(
+    model = AutoModelForImageTextToText.from_pretrained(
         model_name,
         device_map="auto",
         torch_dtype=compute_dtype,
@@ -200,7 +211,7 @@ def load_model_and_tokenizer(model_name: str, bf16: bool):
     model.config.use_cache = False
     model.gradient_checkpointing_enable()
     model = prepare_model_for_kbit_training(model)
-    return model, tokenizer
+    return model, processor
 
 
 def resolve_resume_checkpoint(args: argparse.Namespace, run_paths: RunPaths) -> str | None:
@@ -254,7 +265,8 @@ def main() -> None:
     logger.info("Loaded %s valid training records", len(records))
 
     dataset = Dataset.from_list(records)
-    model, tokenizer = load_model_and_tokenizer(args.model_name, preset["bf16"])
+    model, processor = load_model_and_processor(args.model_name, preset["bf16"])
+    tokenizer = processor.tokenizer
 
     lora_config = LoraConfig(
         r=args.lora_rank,
@@ -267,7 +279,7 @@ def main() -> None:
     model = get_peft_model(model, lora_config)
     model.print_trainable_parameters()
 
-    tokenized_dataset = tokenize_records(dataset, tokenizer, args.max_seq_length)
+    tokenized_dataset = tokenize_records(dataset, processor, args.max_seq_length)
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 
     training_arguments = TrainingArguments(
@@ -342,7 +354,7 @@ def main() -> None:
         raise
 
     trainer.save_model(str(run_paths.final_model_dir))
-    tokenizer.save_pretrained(str(run_paths.final_model_dir))
+    processor.save_pretrained(str(run_paths.final_model_dir))
 
     latest_checkpoint = find_latest_checkpoint(run_paths.checkpoints_dir)
     final_state = {
